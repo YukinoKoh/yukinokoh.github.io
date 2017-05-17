@@ -1,0 +1,138 @@
+$color_base: #191b1a;
+$color_base_title: #9a9a9f;
+$color_base_sub: #adadaf;
+$color_base_subtle: #cdcdcf;
+$color_quote: #191b1a;
+
+$font_base_mobile: 12px;
+$font_base_pc: 16px;
+
+$spacer-x: 10px;
+
+
+@import url(http://weloveiconfonts.com/api/?family=fontelico);
+
+/*
+ * Base and Layout
+ */
+body{
+    margin: 15px 0px;
+    color: $color_base;
+    padding: 0px;
+    font-family: 'Open+Sans', 'Universe', 'Helvetica', sans-serif;
+}
+#site{
+    margin: 0px;
+    padding: 0px;
+}
+.mb-1{
+    margin-bottom: $spacer-x;
+}
+.mb-2{
+    margin-bottom: ($spacer-x * 2);
+}
+a:link, a:hover, a:visited{
+    color: $color_base;
+    text-decoration: underline;
+}
+ // add this class to "row"  to remove guttter
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+/*
+ * Typography
+ */
+h1{
+    font-size: 20px;
+    font-weight: 300;
+}
+h2{
+    margin-top: 34px;
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 300;
+    color: $color_base_title;
+}
+h3{
+    font-size:22px;
+    font-weight: 300;
+}
+h5{
+    color: $color_base_title;
+}
+
+/*
+ * Section
+ */
+.header_logo{
+  height: 56px;
+}
+#top{
+    color: $color_quote;
+    font-size: $font_base_pc;
+    padding: 60px 40px 0px 0px; 
+    background-image: url('../img/hello_l_1x.jpg');
+} 
+
+@media screen and (max-width: 400px){
+    #top{
+        height: 200px;
+        font-size: $font_base_mobile;
+        background-image: -webkit-image-set(url('../img/hello_s_1x.jpg') 1x, 
+                                      url('../img/hello_s_2x.jpg') 2x);
+        background-image: url('../img/hello_s_1x.jpg');
+    }
+}
+@media screen and (min-width:401px) and (max-width:600px){
+    #top{
+        height: 300px;
+        padding-top: 100px;
+        background-image: -webkit-image-set(url('../img/hello_m_1x.jpg') 1x, 
+                                      url('../img/hello_m_2x.jpg') 2x);
+        background-image: url('../img/hello_m_1x.jpg');
+    }
+}
+@media screen and (min-width:601px) and (max-width:900px){
+    #top{
+        height: 450px;
+        padding-top: 200px;
+        padding-right: 80px;
+        background-image: -webkit-image-set(url('../img/hello_l_1x.jpg') 1x, 
+                                      url('../img/hello_l_2x.jpg') 2x);
+        background-image: url('../img/hello_l_1x.jpg');
+    }
+}
+@media screen and (min-width: 900px){
+    #top{
+        height: 600px;
+        padding-top: 220px;
+        padding-right: 100px;
+        background-image: -webkit-image-set(url('../img/hello_xl_1x.jpg') 1x, 
+                                      url('../img/hello_xl_2x.jpg') 2x);
+        background-image: url('../img/hello_xl_1x.jpg');
+    }
+}
+
+/*
+ * footer
+ */
+// fontelico 
+footer{
+    color: $color_base_sub;
+}
+footer a:link, footer a:visited{
+    color: $color_base_sub;
+    text-decoration: none;
+}
+footer a:hover{
+    color: $color_base;
+}
+.icon_footer{
+    margin-right: 20px;
+}
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
