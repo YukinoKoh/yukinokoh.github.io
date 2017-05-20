@@ -47,6 +47,9 @@ h3 {
 h5 {
   color: #9a9a9f; }
 
+h5 a:link, h5 a:visited {
+  color: #9a9a9f; }
+
 /*
  * Section
  */
@@ -63,6 +66,33 @@ header {
 .header_logo {
   padding-top: 15px;
   height: 56px; }
+
+#arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 90;
+  visibility: hidden; }
+
+.pol_arrow {
+  fill: #e9e9eb;
+  stroke-width: 0.6;
+  stroke: #e9e9eb;
+  fill-opacity: 1; }
+
+.pol_shadow {
+  fill: #191b1a;
+  fill-opacity: 0.5; }
+
+.animation_up {
+  animation: up 0.5s ease-out 0s 1; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes up {
+  from {
+    bottom: -46px; }
+  to {
+    bottom: 20px; } }
 
 #top {
   color: #191b1a;
