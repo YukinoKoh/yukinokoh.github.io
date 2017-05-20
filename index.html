@@ -16,6 +16,8 @@
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script
 src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <!-- js -->
+  <script src="js/main.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -31,11 +33,22 @@ src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></scri
         </div>
         <div class="col-xs-10">    
           <h1 class="text-right text-uppercase">Yukino Kohmoto</h1>
-          <h5 class="text-right">Designer / Front-end</h5>
+          <h5 class="text-right"><a href="mailto:yukino.kohmoto@gmail.com">Contact</a></h5>
         </div>
       </div></div>
     </header>
 
+    <section id="arrow"><a href="#">
+      <svg height="36" width="44">
+        <defs>
+          <filter id="f1" x="0" y="0">
+            <feGaussianBlur stdDeviation="1" />
+            <feOffset dx="0" dy="1" />
+        </filter></defs>
+        <polygon points="22,2 2,33 42,33" class="pol_shadow" filter="url(#f1)" />
+        <polygon points="20,0 0,32 40,32" class="pol_arrow" />
+      </svg>
+    </a></section>
     <!-- top image with a quote -->
     <section id="top">
       <div class="row"><div class="col-12">
