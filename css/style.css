@@ -3,14 +3,14 @@
  * Base and Layout
  */
 body {
-  margin: 15px 0px;
+  margin: 15px 0;
   color: #191b1a;
-  padding: 0px;
+  padding: 0;
   font-family: 'Open+Sans', 'Universe', 'Helvetica', sans-serif; }
 
 #site {
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
 
 .mb-1 {
   margin-bottom: 10px; }
@@ -18,7 +18,9 @@ body {
 .mb-2 {
   margin-bottom: 20px; }
 
-a:link, a:hover, a:visited {
+a:link,
+a:hover,
+a:visited {
   color: #191b1a;
   text-decoration: underline; }
 
@@ -47,15 +49,17 @@ h3 {
 h5 {
   color: #9a9a9f; }
 
-h5 a:link, h5 a:visited {
+h5 a:link,
+h5 a:visited {
   color: #9a9a9f; }
 
 /*
  * Section
  */
+/* Header */
 header {
   top: -5px;
-  margin-top: 0px;
+  margin-top: 0;
   width: 100%;
   background-color: #fff;
   z-index: 100;
@@ -63,10 +67,11 @@ header {
   -moz-box-shadow: 0px 10px 14px -5px rgba(224, 224, 224, 0.35);
   box-shadow: 0px 10px 14px -5px rgba(224, 224, 224, 0.35); }
 
-.header_logo {
+.header-logo {
   padding-top: 15px;
   height: 56px; }
 
+/* section arrow */
 #arrow {
   position: fixed;
   bottom: 20px;
@@ -74,16 +79,16 @@ header {
   z-index: 90;
   visibility: hidden; }
 
-.pol_arrow {
+.pol-arrow {
   fill: #e9e9eb;
   stroke-width: 0.6;
   fill-opacity: 1; }
 
-.pol_shadow {
+.pol-shadow {
   fill: #191b1a;
   fill-opacity: 0.5; }
 
-.animation_up {
+.animation-up {
   animation: up 0.5s ease-out 0s 1; }
 
 /* Safari 4.0 - 8.0 */
@@ -99,6 +104,7 @@ header {
   to {
     bottom: 20px; } }
 
+/* section top */
 #top {
   color: #191b1a;
   font-size: 16px;
@@ -135,21 +141,17 @@ header {
     background-image: -webkit-image-set(url("../img/hello_xl_1x.jpg") 1x, url("../img/hello_xl_2x.jpg") 2x);
     background-image: url("../img/hello_xl_1x.jpg"); } }
 
-/*
- * footer
- */
+/* footer */
 footer {
   color: #adadaf; }
 
-footer a:link, footer a:visited {
+footer a:link,
+footer a:visited {
   color: #adadaf;
   text-decoration: none; }
 
 footer a:hover {
   color: #191b1a; }
-
-.icon_footer {
-  margin-right: 20px; }
 
 [class*="fontelico-"]:before {
   font-family: 'fontelico', sans-serif; }

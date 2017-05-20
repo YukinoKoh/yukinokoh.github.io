@@ -16,63 +16,88 @@ $spacer: 10px;
 /*
  * Base and Layout
  */
-body{
-  margin: 15px 0px;
+body {
+  margin: 15px 0;
   color: $color_base;
-  padding: 0px;
+  padding: 0;
   font-family: 'Open+Sans', 'Universe', 'Helvetica', sans-serif;
 }
-#site{
-  margin: 0px;
-  padding: 0px;
+
+
+#site {
+  margin: 0;
+  padding: 0;
 }
-.mb-1{
+
+
+.mb-1 {
   margin-bottom: $spacer;
 }
-.mb-2{
+
+
+.mb-2 {
   margin-bottom: ($spacer * 2);
 }
-a:link, a:hover, a:visited{
+
+
+a:link, 
+a:hover,
+a:visited {
   color: $color_base;
   text-decoration: underline;
 }
+
+
  // add this class to "row"  to remove guttter
-.no-gutter > [class*='col-'] {
+.no-gutter > [class*='col-']  {
   padding-right: 0;
   padding-left: 0;
 }
+
+
 /*
  * Typography
  */
-h1{
+h1 {
   font-size: 20px;
   font-weight: 300;
 }
-h2{
+
+
+h2 {
   margin-top: 34px;
   margin-bottom: 16px;
   font-size: 22px;
   font-weight: 300;
   color: $color_base_title;
 }
-h3{
-  font-size:22px;
+
+
+h3 {
+  font-size: 22px;
   font-weight: 300;
 }
-h5{
+
+
+h5 {
   color: $color_base_title;
 }
-h5 a:link, h5 a:visited{
+
+
+h5 a:link,
+h5 a:visited {
   color: $color_base_title;
 }
+
 
 /*
  * Section
  */
-header{
+/* Header */
+header {
   // Adjusted to afflix scroll
   top: -5px;
-  margin-top: 0px;
+  margin-top: 0;
   width: 100%;
   background-color: #fff;
   z-index: 100;
@@ -80,29 +105,42 @@ header{
   -moz-box-shadow: 0px 10px 14px -5px rgba(224,224,224,0.35);
   box-shadow: 0px 10px 14px -5px rgba(224,224,224,0.35);
 }
-.header_logo{
+
+
+.header-logo {
   padding-top: 15px;
   height: 56px;
 }
-#arrow{
+
+
+/* section arrow */
+#arrow {
   position: fixed;
   bottom: ($spacer * 2);
   right: ($spacer * 2);
   z-index: 90;
   visibility: hidden;
 }
-.pol_arrow{
+
+
+.pol-arrow {
   fill: $color_subtle;
   stroke-width: 0.6;
   fill-opacity: 1;
 }
-.pol_shadow{
+
+
+.pol-shadow {
  fill: $color_base;
  fill-opacity: 0.5; 
 }
-.animation_up{
+
+
+.animation-up {
   animation: up 0.5s ease-out 0s 1;
 }
+
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes up {
     from {bottom: -46px;}
@@ -112,14 +150,19 @@ header{
     from {bottom: -46px;}
     to {bottom: ($spacer * 2);}
 }
-#top{
+
+
+/* section top */
+#top {
   color: $color_quote;
   font-size: $font_base_pc;
   padding: 60px 40px 0px 0px; 
   background-image: url('../img/hello_l_1x.jpg');
 }
-@media screen and (max-width: 400px){
-  #top{
+
+
+@media screen and (max-width: 400px) {
+  #top {
     height: 200px;
     font-size: $font_base_mobile;
     background-image: -webkit-image-set(url('../img/hello_s_1x.jpg') 1x, 
@@ -128,8 +171,10 @@ header{
     background-image: url('../img/hello_s_1x.jpg');
   }
 }
-@media screen and (min-width:401px) and (max-width:600px){
-  #top{
+
+
+@media screen and (min-width:401px) and (max-width:600px) {
+  #top {
     height: 300px;
     padding-top: 100px;
     background-image: -webkit-image-set(url('../img/hello_m_1x.jpg') 1x, 
@@ -138,8 +183,10 @@ header{
     background-image: url('../img/hello_m_1x.jpg');
   }
 }
-@media screen and (min-width:601px) and (max-width:900px){
-  #top{
+
+
+@media screen and (min-width:601px) and (max-width:900px) {
+  #top {
     height: 450px;
     padding-top: 200px;
     padding-right: 80px;
@@ -149,8 +196,10 @@ header{
     background-image: url('../img/hello_l_1x.jpg');
   }
 }
-@media screen and (min-width: 900px){
-  #top{
+
+
+@media screen and (min-width: 900px) {
+  #top {
     height: 600px;
     padding-top: 220px;
     padding-right: 100px;
@@ -161,23 +210,26 @@ header{
     }
 }
 
-/*
- * footer
- */
-// fontelico 
-footer{
+
+/* footer */
+footer {
   color: $color_base_sub;
 }
-footer a:link, footer a:visited{
+
+
+footer a:link,
+footer a:visited {
   color: $color_base_sub;
   text-decoration: none;
 }
-footer a:hover{
+
+
+footer a:hover {
   color: $color_base;
 }
-.icon_footer{
-  margin-right: 20px;
-}
+
+
+// fontelico 
 [class*="fontelico-"]:before {
   font-family: 'fontelico', sans-serif;
 }
