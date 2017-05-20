@@ -10,7 +10,7 @@ $font_base_pc: 16px;
 $spacer: 10px;
 
 
-@import url(http://weloveiconfonts.com/api/?family=fontelico);
+@import url(https//weloveiconfonts.com/api/?family=fontelico);
 
 
 /*
@@ -41,8 +41,6 @@ a:link, a:hover, a:visited{
   padding-right: 0;
   padding-left: 0;
 }
-
-
 /*
  * Typography
  */
@@ -95,7 +93,6 @@ header{
 }
 .pol_arrow{
   fill: $color_subtle;
-  stroke: $color_title;
   stroke-width: 0.6;
   fill-opacity: 1;
 }
@@ -111,14 +108,16 @@ header{
     from {bottom: -46px;}
     to {bottom: ($spacer * 2);}
 }
-
+@keyframes up {
+    from {bottom: -46px;}
+    to {bottom: ($spacer * 2);}
+}
 #top{
   color: $color_quote;
   font-size: $font_base_pc;
   padding: 60px 40px 0px 0px; 
   background-image: url('../img/hello_l_1x.jpg');
-} 
-
+}
 @media screen and (max-width: 400px){
   #top{
     height: 200px;

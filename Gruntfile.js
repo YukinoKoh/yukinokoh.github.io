@@ -24,6 +24,7 @@ module.exports = function(grunt){
                 tasks: ['sass']
             }
         },
+        /* for image compression
         imagemin: {
             jpg: {
                 options: {
@@ -32,19 +33,18 @@ module.exports = function(grunt){
                 files: [{
                     expand: true,
                     cwd: config.imgDir,
-                    src: ['**/*.jpg'],
+                    src: ['img/*.jpg'],
                     dest: config.imgDir+'compressed/',
                     ext: '.jpg'
                 }]
             }
-        }
+        }  */
     });
 
     // register task
     grunt.registerTask('default',[
         'sass',
         'jshint',
-        'imagemin',
         'watch'
     ]);
 }; 
