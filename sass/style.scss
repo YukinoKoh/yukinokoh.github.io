@@ -1,44 +1,45 @@
 $color_base: #191b1a;
 $color_base_title: #9a9a9f;
 $color_base_sub: #adadaf;
-$color_base_subtle: #cdcdcf;
 $color_quote: #191b1a;
+$color_subtle: #e9e9eb;
 
 $font_base_mobile: 12px;
 $font_base_pc: 16px;
 
-$spacer-x: 10px;
+$spacer: 10px;
 
 
 @import url(http://weloveiconfonts.com/api/?family=fontelico);
+
 
 /*
  * Base and Layout
  */
 body{
-    margin: 15px 0px;
-    color: $color_base;
-    padding: 0px;
-    font-family: 'Open+Sans', 'Universe', 'Helvetica', sans-serif;
+  margin: 15px 0px;
+  color: $color_base;
+  padding: 0px;
+  font-family: 'Open+Sans', 'Universe', 'Helvetica', sans-serif;
 }
 #site{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .mb-1{
-    margin-bottom: $spacer-x;
+  margin-bottom: $spacer;
 }
 .mb-2{
-    margin-bottom: ($spacer-x * 2);
+  margin-bottom: ($spacer * 2);
 }
 a:link, a:hover, a:visited{
-    color: $color_base;
-    text-decoration: underline;
+  color: $color_base;
+  text-decoration: underline;
 }
  // add this class to "row"  to remove guttter
 .no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 
@@ -46,28 +47,32 @@ a:link, a:hover, a:visited{
  * Typography
  */
 h1{
-    font-size: 20px;
-    font-weight: 300;
+  font-size: 20px;
+  font-weight: 300;
 }
 h2{
-    margin-top: 34px;
-    margin-bottom: 16px;
-    font-size: 22px;
-    font-weight: 300;
-    color: $color_base_title;
+  margin-top: 34px;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 300;
+  color: $color_base_title;
 }
 h3{
-    font-size:22px;
-    font-weight: 300;
+  font-size:22px;
+  font-weight: 300;
 }
 h5{
-    color: $color_base_title;
+  color: $color_base_title;
+}
+h5 a:link, h5 a:visited{
+  color: $color_base_title;
 }
 
 /*
  * Section
  */
 header{
+  // Adjusted to afflix scroll
   top: -5px;
   margin-top: 0px;
   width: 100%;
@@ -81,49 +86,79 @@ header{
   padding-top: 15px;
   height: 56px;
 }
+#arrow{
+  position: fixed;
+  bottom: ($spacer * 2);
+  right: ($spacer * 2);
+  z-index: 90;
+  visibility: hidden;
+}
+.pol_arrow{
+  fill: $color_subtle;
+  stroke: $color_title;
+  stroke-width: 0.6;
+  fill-opacity: 1;
+}
+.pol_shadow{
+ fill: $color_base;
+ fill-opacity: 0.5; 
+}
+.animation_up{
+  animation: up 0.5s ease-out 0s 1;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes up {
+    from {bottom: -46px;}
+    to {bottom: ($spacer * 2);}
+}
+
 #top{
-    color: $color_quote;
-    font-size: $font_base_pc;
-    padding: 60px 40px 0px 0px; 
-    background-image: url('../img/hello_l_1x.jpg');
+  color: $color_quote;
+  font-size: $font_base_pc;
+  padding: 60px 40px 0px 0px; 
+  background-image: url('../img/hello_l_1x.jpg');
 } 
 
 @media screen and (max-width: 400px){
-    #top{
-        height: 200px;
-        font-size: $font_base_mobile;
-        background-image: -webkit-image-set(url('../img/hello_s_1x.jpg') 1x, 
-                                      url('../img/hello_s_2x.jpg') 2x);
-        background-image: url('../img/hello_s_1x.jpg');
-    }
+  #top{
+    height: 200px;
+    font-size: $font_base_mobile;
+    background-image: -webkit-image-set(url('../img/hello_s_1x.jpg') 1x, 
+                      url('../img/hello_s_2x.jpg') 2x);
+    // IE, Firefox
+    background-image: url('../img/hello_s_1x.jpg');
+  }
 }
 @media screen and (min-width:401px) and (max-width:600px){
-    #top{
-        height: 300px;
-        padding-top: 100px;
-        background-image: -webkit-image-set(url('../img/hello_m_1x.jpg') 1x, 
-                                      url('../img/hello_m_2x.jpg') 2x);
-        background-image: url('../img/hello_m_1x.jpg');
-    }
+  #top{
+    height: 300px;
+    padding-top: 100px;
+    background-image: -webkit-image-set(url('../img/hello_m_1x.jpg') 1x, 
+                      url('../img/hello_m_2x.jpg') 2x);
+    // IE, Firefox
+    background-image: url('../img/hello_m_1x.jpg');
+  }
 }
 @media screen and (min-width:601px) and (max-width:900px){
-    #top{
-        height: 450px;
-        padding-top: 200px;
-        padding-right: 80px;
-        background-image: -webkit-image-set(url('../img/hello_l_1x.jpg') 1x, 
-                                      url('../img/hello_l_2x.jpg') 2x);
-        background-image: url('../img/hello_l_1x.jpg');
-    }
+  #top{
+    height: 450px;
+    padding-top: 200px;
+    padding-right: 80px;
+    background-image: -webkit-image-set(url('../img/hello_l_1x.jpg') 1x, 
+                      url('../img/hello_l_2x.jpg') 2x);
+    // IE, Firefox
+    background-image: url('../img/hello_l_1x.jpg');
+  }
 }
 @media screen and (min-width: 900px){
-    #top{
-        height: 600px;
-        padding-top: 220px;
-        padding-right: 100px;
-        background-image: -webkit-image-set(url('../img/hello_xl_1x.jpg') 1x, 
-                                      url('../img/hello_xl_2x.jpg') 2x);
-        background-image: url('../img/hello_xl_1x.jpg');
+  #top{
+    height: 600px;
+    padding-top: 220px;
+    padding-right: 100px;
+    background-image: -webkit-image-set(url('../img/hello_xl_1x.jpg') 1x, 
+                      url('../img/hello_xl_2x.jpg') 2x);
+    // IE, Firefox
+    background-image: url('../img/hello_xl_1x.jpg');
     }
 }
 
@@ -132,17 +167,17 @@ header{
  */
 // fontelico 
 footer{
-    color: $color_base_sub;
+  color: $color_base_sub;
 }
 footer a:link, footer a:visited{
-    color: $color_base_sub;
-    text-decoration: none;
+  color: $color_base_sub;
+  text-decoration: none;
 }
 footer a:hover{
-    color: $color_base;
+  color: $color_base;
 }
 .icon_footer{
-    margin-right: 20px;
+  margin-right: 20px;
 }
 [class*="fontelico-"]:before {
   font-family: 'fontelico', sans-serif;
