@@ -6,9 +6,11 @@ body {
   margin: 15px 0;
   color: #191b1a;
   padding: 0;
-  font-family: 'Open+Sans', 'Universe', 'Helvetica', sans-serif; }
+  /* user double quotes */
+  font-family: "Open+Sans", "Universe", "Helvetica", sans-serif; }
 
-#site {
+/* better to use class over IDs */
+.site {
   margin: 0;
   padding: 0; }
 
@@ -72,7 +74,7 @@ header {
   height: 56px; }
 
 /* section arrow */
-#arrow {
+.posi_rb {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -105,28 +107,28 @@ header {
     bottom: 20px; } }
 
 /* section top */
-#top {
+.top {
   color: #191b1a;
   font-size: 16px;
   padding: 60px 40px 0px 0px;
   background-image: url("../img/hello_l_1x.jpg"); }
 
 @media screen and (max-width: 400px) {
-  #top {
+  .top {
     height: 200px;
     font-size: 12px;
     background-image: -webkit-image-set(url("../img/hello_s_1x.jpg") 1x, url("../img/hello_s_2x.jpg") 2x);
     background-image: url("../img/hello_s_1x.jpg"); } }
 
 @media screen and (min-width: 401px) and (max-width: 600px) {
-  #top {
+  .top {
     height: 300px;
     padding-top: 100px;
     background-image: -webkit-image-set(url("../img/hello_m_1x.jpg") 1x, url("../img/hello_m_2x.jpg") 2x);
     background-image: url("../img/hello_m_1x.jpg"); } }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-  #top {
+  .top {
     height: 450px;
     padding-top: 200px;
     padding-right: 80px;
@@ -134,7 +136,7 @@ header {
     background-image: url("../img/hello_l_1x.jpg"); } }
 
 @media screen and (min-width: 900px) {
-  #top {
+  .top {
     height: 600px;
     padding-top: 220px;
     padding-right: 100px;
