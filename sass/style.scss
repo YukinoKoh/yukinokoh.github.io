@@ -33,13 +33,21 @@ body {
 }
 
 
+
 .mb-1 {
   margin-bottom: $spacer;
 }
 
-
 .mb-2 {
   margin-bottom: ($spacer * 2);
+}
+
+.ml-1 {
+  margin-left: $spacer;
+}
+
+.mr-1 {
+  margin-right: $spacer;
 }
 
 
@@ -116,45 +124,6 @@ header {
 }
 
 
-/* section arrow */
-.posi_rb{
-  position: fixed;
-  bottom: ($spacer * 2);
-  right: ($spacer * 2);
-  z-index: 90;
-  visibility: hidden;
-}
-
-
-.pol-arrow {
-  fill: $color_subtle;
-  stroke-width: 0.6;
-  fill-opacity: 1;
-}
-
-
-.pol-shadow {
- fill: $color_base;
- fill-opacity: 0.5; 
-}
-
-
-.animation-up {
-  animation: up 0.5s ease-out 0s 1;
-}
-
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes up {
-    from {bottom: -46px;}
-    to {bottom: ($spacer * 2);}
-}
-@keyframes up {
-    from {bottom: -46px;}
-    to {bottom: ($spacer * 2);}
-}
-
-
 /* section top */
 .top {
   color: $color_quote;
@@ -168,8 +137,8 @@ header {
   .top {
     height: 200px;
     font-size: $font_base_mobile;
-    background-image: -webkit-image-set(url('../img/hello_s_1x.jpg') 1x, 
-                      url('../img/hello_s_2x.jpg') 2x);
+    background-image: -webkit-image-set('../img/hello_s_1x.jpg' 1x, 
+                      '../img/hello_s_2x.jpg' 2x);
     // IE, Firefox
     background-image: url('../img/hello_s_1x.jpg');
   }
@@ -180,8 +149,8 @@ header {
   .top {
     height: 300px;
     padding-top: 100px;
-    background-image: -webkit-image-set(url('../img/hello_m_1x.jpg') 1x, 
-                      url('../img/hello_m_2x.jpg') 2x);
+    background-image: -webkit-image-set('../img/hello_m_1x.jpg' 1x, 
+                      '../img/hello_m_2x.jpg' 2x);
     // IE, Firefox
     background-image: url('../img/hello_m_1x.jpg');
   }
@@ -193,8 +162,8 @@ header {
     height: 450px;
     padding-top: 200px;
     padding-right: 80px;
-    background-image: -webkit-image-set(url('../img/hello_l_1x.jpg') 1x, 
-                      url('../img/hello_l_2x.jpg') 2x);
+    background-image: -webkit-image-set('../img/hello_l_1x.jpg' 1x, 
+                      '../img/hello_l_2x.jpg' 2x);
     // IE, Firefox
     background-image: url('../img/hello_l_1x.jpg');
   }
@@ -206,8 +175,8 @@ header {
     height: 600px;
     padding-top: 220px;
     padding-right: 100px;
-    background-image: -webkit-image-set(url('../img/hello_xl_1x.jpg') 1x, 
-                      url('../img/hello_xl_2x.jpg') 2x);
+    background-image: -webkit-image-set('../img/hello_xl_1x.jpg' 1x, 
+                      '../img/hello_xl_2x.jpg' 2x);
     // IE, Firefox
     background-image: url('../img/hello_xl_1x.jpg');
     }
@@ -229,10 +198,4 @@ footer a:visited {
 
 footer a:hover {
   color: $color_base;
-}
-
-
-// fontelico 
-[class*="fontelico-"]:before {
-  font-family: 'fontelico', sans-serif;
 }

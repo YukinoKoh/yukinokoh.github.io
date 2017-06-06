@@ -12,7 +12,7 @@
   <!-- Bootstrap 3 -->
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-1.10.1.min.js" asnc></script>
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script
 src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async></script>
   <!-- js -->
@@ -25,32 +25,23 @@ src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async>
 
 <body>
   <div class="site container-fluid">
-    <header id="header" class="container-fluid" data-spy="affix" data-offset-top="10">
-      <div class="container"><div class="row">
+    <header id="header"  data-spy="affix" data-offset-top="10">
+      <div class="row mr-1 ml-1">
         <div class="col-xs-2"><a href="#">
-          <img class="header-logo" src="img/0_logo.svg" alt="yukino Kohmoto"/>
+          <img class="header-logo" src="img/0_logo.svg" alt="yukino Kohmoto">
         </a></div>
         <div class="col-xs-10">    
           <h1 class="text-right text-uppercase">Yukino Kohmoto</h1>
           <h5 class="text-right"><a href="mailto:yukino.kohmoto@gmail.com">Contact</a></h5>
         </div>
-      </div></div>
+      </div>
     </header>
 
-    <section id="arrow" class="posi_rb"><a href="#">
-      <svg height="36" width="44">
-        <defs>
-          <filter id="f1" x="0" y="0">
-            <feGaussianBlur stdDeviation="1" />
-            <feOffset dx="0" dy="1" />
-        </filter></defs>
-        <polygon points="22,2 2,33 42,33" class="pol-shadow" filter="url(#f1)" />
-        <polygon points="20,0 0,32 40,32" class="pol-arrow" />
-      </svg>
-    </a></section>
     <!-- top image with a quote -->
-    <section id="top" class="top">
-        <p class="text-right">The pine stays geen in winter,<br/>wisdom in hardship.<br/><small>- Chinese Proverb</small></p>
+    <section id="top" class="container-fluid top">
+      <div class="row"><div class="col-12">
+        <p class="text-right">The pine stays geen in winter,<br>wisdom in hardship.<br><small>- Chinese Proverb</small></p>
+      </div></div>
     </section>  
 
     <!-- section to introduce projects -->
@@ -166,8 +157,8 @@ src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async>
       </div><!-- end row -->
     </section> 
 
-    <footer class="container">
-      <div class="row"><div class="col-sx-12">
+    <footer class="container-fluid">
+      <div class="row mr-1 ml-1"><div class="col-sx-12">
         <ul class="list-inline">
           <li><a href="http://linkedin.com/in/yukino-kohmoto-a7345a19/"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
           <li><a href="https://github.com/YukinoKoh"><i class="fa fa-github"></i> GitHub</a></li>
