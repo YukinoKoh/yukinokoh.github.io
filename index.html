@@ -39,8 +39,20 @@ src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async>
 
     <!-- top image with a quote -->
     <section id="top" class="container-fluid top">
-      <div class="row"><div class="col-12">
-        <p class="text-right">The pine stays geen in winter,<br>wisdom in hardship.<br><small>- Chinese Proverb</small></p>
+      <div class="row"><div class="col-sx-12">
+        <picture>
+          <source media="screen and (max-width:400px)"
+                    srcset="img/hello_s_2x.jpg 2x, 
+                            img/hello_s_1x.jpg 1x">
+          <source media="screen and (min-width:401px) and (max-width:600px)"
+                    srcset="img/hello_m_2x.jpg 2x, 
+                            img/hello_m_1x.jpg 1x">
+          <source media="(min-width:601px)"
+                    srcset="img/hello_xl_2x.jpg 2x, 
+                            img/hello_xl_1x.jpg 1x">
+          <img src="img/hello_xl_2x.jpg" class="top-img" alt="my drawing of a pine">
+        </picture>
+        <p class="text-right top-quote">The pine stays geen in winter,<br>wisdom in hardship.<br><small>- Chinese Proverb</small></p>
       </div></div>
     </section>  
 
@@ -103,23 +115,6 @@ src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async>
         </div>
       </div>
       <div class="row">
-        <!-- project: Simeji -->
-        <div id="#work-simeji" class="col-sm-4 mb-2">
-          <picture>
-            <source media="screen and (max-width:400px)"
-                    srcset="img/simeji_s_2x.jpg 2x, 
-                            img/simeji_s_1x.jpg 1x">
-            <source media="screen and (min-width:401px) and (max-width:767px)"
-                    srcset="img/simeji_m_2x.jpg 2x, 
-                            img/simeji_m_1x.jpg 1x">
-            <source media="(min-width:768px)"
-                    srcset="img/simeji_l_2x.jpg 2x, 
-                            img/simeji_l_1x.jpg 1x">
-            <img class="img-responsive"  src="img/simeji_s_1x.jpg" alt="Simeji">
-          </picture> 
-          <h3>Simeji UI/UX design</h3>
-          <p>Simeji is IME, which prediction is supported with cloud base dictionary. I lead its design and production team within intensive agile development environment when iOS opened its gate to the third party keyboard apps, resulting to receive <em>Best App 2014</em> by iTunes Store in Japan.</p> 
-        </div>
         <!-- project: Python trailer -->
         <div id="#work-python-trailer" class="col-sm-4 mb-2">
           <picture>
