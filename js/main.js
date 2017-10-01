@@ -1,11 +1,10 @@
-$(window).scroll(function() {
-  var height = $(document).scrollTop(); 
-  if (height >= 30){
-    $("#arrow").css("visibility","visible");
-    $("#arrow").addClass("animation-up");
-  }else{
-    $("#arrow").css("visibility","hidden");
-    $("#arrow").removeClass("animation-up");
-  }
-});
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    // Registration was successful
+  }).catch(function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
+
 
