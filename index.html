@@ -16,9 +16,9 @@
     }
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="img/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="img/png" sizes="96x96" href="/img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="icon" type="img/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="img/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <!-- Bootstrap 3 -->
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -27,7 +27,7 @@
 src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async></script>
   <!-- js -->
   <!-- css -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
@@ -37,7 +37,7 @@ src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" async>
     <header id="header"  data-spy="affix" data-offset-top="10">
       <div class="row mr-1 ml-1">
         <div class="col-xs-2"><a href="#">
-          <img class="header-logo" src="/img/0_logo.svg" alt="yukino Kohmoto">
+          <img class="header-logo" src="img/0_logo.svg" alt="yukino Kohmoto">
         </a></div>
         <div class="col-xs-10">    
           <h1 class="text-right text-uppercase">Yukino Kohmoto</h1>
@@ -108,6 +108,27 @@ I hope this project gives you some idea when you choose fonts for a project that
           <h3>Type with Processing</h3>
           <p>Processing is open source software with which coders can interact with its visual outputs. All types in this project are generated digitally with numbers, angles, or sign/cosign calculation etc. It's on <a href="https://github.com/YukinoKoh/processing-type">GitHub</a> with MIT License.</p>
         </div>
+        <!-- project: ways2say -->
+        <div id="#work-ways2say" class="col-sm-4 mb-2">
+          <a href="https://yukinokoh.github.io/ways2say/">
+          <picture>
+            <source media="screen and (max-width:400px)"
+                    srcset="img/ways2say_s_2x.jpg 2x, 
+                            img/ways2say_s_1x.jpg 1x">
+            <source media="screen and (min-width:401px) and (max-width:767px)"
+                    srcset="img/ways2say_m_2x.jpg 2x, 
+                            img/ways2say_m_1x.jpg 1x">
+            <source media="(min-width:768px)"
+                    srcset="img/ways2say_l_2x.jpg 2x, 
+                            img/ways2say_l_1x.jpg 1x">
+            <img class="img-responsive"  src="img/ways2say_m_1x.jpg" alt="Ways to say">
+          </picture></a>
+          <h3>Ways to say</h3>
+          <p>This is a <a href="https://yukinokoh.github.io/ways2say/">chatbot</a> that works on Facebook messenger to give feedback to what the user is about to say. The background of this idea is increasing diversity around. I notice sometimes people say something offensive to another without actually knowing it is not a nice way to say. This app is for such users to be aware and suggests alternative ways to say.  The development process is shared on <a href="https://github.com/YukinoKoh/ways2say">Github</a>.   
+          </p>
+        </div>
+      </div>
+      <div class="row">
         <!-- project: framer:rest -->
         <div id="#work-framerRest" class="col-sm-4 mb-2">
           <a href="https://framer.cloud/RUYrT">
@@ -127,8 +148,6 @@ I hope this project gives you some idea when you choose fonts for a project that
           <p>This is a <a href="https://framer.cloud/RUYrT">prototype</a>  (iOS 6Plus) of a function that suggests users to rest and reflect own psychological status. An idea behind this prototype is that something to help people rest and reflect a day maybe useful for healthy life.
 This idea was derived mainly from two previous studies: '<a href="http://www.nointerface.com/book/" target="_blank">The best interface is No interface</a>’ by Golden Krishna and an app '<a href="http://moodnotes.thriveport.com/" target="_blank">Moodnotes</a>' developed by <a href="http://thriveport.com/about/" target="_blank">ThrivePort, LLC</a>. Particularly, an element about dark interface to calm down is from the book and recording self psychological pattern is from the app.</p>
         </div>
-      </div>
-      <div class="row">
         <!-- project: fit -->
         <div id="#work-fit" class="col-sm-4 mb-2">
           <a href="https://www.behance.net/gallery/52885891/Natural-light-and-software">
@@ -165,6 +184,8 @@ This idea was derived mainly from two previous studies: '<a href="http://www.noi
           <h3>Exploring with Google Maps</h3>
           <p>Which information is indispensable? It is the question asked throughout this little project exploring with Google Maps. Imaging the time people use handwritten map on paper to show recommendation to visitors, I gave hierarchy among information appeared on the map. It's on <a href="https://github.com/YukinoKoh/jMap">GitHub</a> with MIT License.</p>
         </div>
+      </div>
+      <div class="row"> 
          <!-- project: rot13 -->
         <div id="#rot13" class="col-sm-4 mb-2">
           <a href="https://rot13-169008.appspot.com/">
@@ -183,8 +204,6 @@ This idea was derived mainly from two previous studies: '<a href="http://www.noi
           <h3>ROT13</h3>
           <p><a href="https://rot13-169008.appspot.com/">ROT13</a> with Google App Engine is a <a href="https://en.wikipedia.org/wiki/ROT13">letter substitution cipher</a> that alters each letter by adding ascii value 13 to the original one. </p>
         </div>
-      </div><!-- end row -->
-      <div class="row">
         <!-- project: blog templates -->
         <div id="#work-property-m" class="col-sm-4 mb-2">
           <picture>
@@ -220,6 +239,8 @@ This idea was derived mainly from two previous studies: '<a href="http://www.noi
           <h3>Trailer site with Pyhton</h3>
           <p>It's a project with Python, configuring a html file that shows title and introduction of movies as well as its youtube trailers. I put some movies that I would recommend to watch. It's on <a href="https://github.com/YukinoKoh/ud036_StarterCode">GitHub</a> with MIT Licence.</p>
         </div>
+      </div><!-- end row -->
+      <div class="row">
         <!-- project: property M -->
         <div id="#work-property-m" class="col-sm-4 mb-2">
           <picture>
@@ -237,8 +258,6 @@ This idea was derived mainly from two previous studies: '<a href="http://www.noi
           <h3>Property M</h3>
           <p>Property M is a group of developers, who build houses and community around it. I help them in art direction and creating <a href="https://www.behance.net/gallery/52892197/Property-M">animated logo</a> that delivers their message that houses are for people who live there and who visit them.</p>
         </div>
-      </div><!-- end row-->
-      <div class="row">
         <!-- project: Urban Grocer's guide -->
         <div id="#urban-grocer" class="col-sm-4 mb-2">
           <picture>
