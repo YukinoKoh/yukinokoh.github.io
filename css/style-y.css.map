@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA;;EAEE;AACF,IAAI;EACF,KAAK,EAPM,OAAO;EAQlB,WAAW,EAPD,gDAAgD",
+"sources": ["../sass/style-y.scss"],
+"names": [],
+"file": "style-y.css"
+}

@@ -3,13 +3,13 @@ module.exports = function(grunt){
     //load grunt modules by load-grunt-tasks automatically
     require('load-grunt-tasks')(grunt);
     // use directory definition in .yml
-    var config = grunt.file.readYAML('Gruntfile.yml');    
+    var config = grunt.file.readYAML('Gruntfile.yml');
 
     grunt.initConfig({
         sass: {
             dist: {
-                src: config.scssDir+'style.scss',
-                dest: config.cssDir+'style.css'
+                src: config.scssDir+'style-y-base.scss',
+                dest: config.cssDir+'style-y-base.css'
             }
         },
         jshint: {
@@ -47,4 +47,4 @@ module.exports = function(grunt){
         'jshint',
         'watch'
     ]);
-}; 
+};

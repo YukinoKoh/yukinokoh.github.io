@@ -1,0 +1,109 @@
+$color_test1: #efefef;
+$color_test2: #dfdfdf;
+$color_base: #2B2A40;
+$color_sub1: #898887;
+$color_sub2: #C3C1C2;
+$color_y: #07CBCE;
+$color_y_hover: #06A5A7;
+/* pink: #E9C5BD green1: 4ED9B9; green2: 07CBCE */
+
+@font-face {
+  font-family: "ClarikaProGeo-Lt";
+  src: url('../webFonts/ClarikaProGeoLt/font.woff2') format('woff2'), url('../webFonts/ClarikaProGeoLt/font.woff') format('woff');
+}
+
+$font_title:'Lora', serif; //'Arbutus Slab', serif;
+$font_title_weight: 500;
+$font_title_style: normal;
+$font_body: "ClarikaProGeo-Lt", sans-serif;
+$font_body_space: 0.04em;
+$font_body_size: 18px;
+$font_sub_size: 0.8em;
+$font_sub_lineheight: 1.5em;
+$sp1: 16px;
+$sp2: 32px;
+/*
+ * test
+ */
+ .test-mark1{background-color: $color_test1;}
+ .test-mark2{background-color: $color_test2;}
+/*
+ * base
+ */
+body{
+  color: $color_base;
+  font-family: $font_body;
+  letter-spacing: $font_body_space;
+  font-size: $font_body_size;
+}
+ul.n-b{list-style-type: none; margin: 0; padding: 0;
+  font-family: $font_body; line-height: $font_sub_lineheight;
+  font-size: $font_sub_size;
+}
+
+/*
+ * type
+ */
+h1{font-family: $font_title; font-weight: $font_title_weight; font-style: $font_title_style;
+  font-size: 47px; color: $color_y;}
+h2{font-family: $font_body; font-size: $font_body_size; color: $color_base;}
+h3{font-family: $font_body; font-size: $font_body_size; color: $color_sub1;
+   margin-top: 0;}
+h4{font-family: $font_title; font-weight: $font_title_weight; font-style: $font_title_style;
+  font-size: $font_body_size; color: $color_y; margin: 40px 0 20px 0}
+h5{}
+.sub{color: $color_sub1;font-family: $font_body; font-size: $font_sub_size;}
+a, a:visited, a:active{
+  color: $color_base; text-decoration: none;
+  border-bottom: 1px solid $color_y}
+  a:hover{border-bottom: 1px solid $color_y_hover;}
+a.sub, a.sub:visited, a.sub:hover, a.sub:active{color: $color_sub1;text-decoration: none;
+  border-bottom: 1px solid $color_y}
+a.footer, a.footer:visited, a.footer:active{color: $color_sub1;text-decoration: none; border-bottom: none;}
+a.footer:hover{color: $color_base;}
+/*
+ *  layout
+ */
+ body{
+   width:100%; margin: 0;
+ }
+ .p1{padding: $sp1}
+ .p2{padding: $sp2}
+ .p1-h{padding: 0 $sp1;}
+ .p2-h{padding: 0 $sp2;}
+ .p1-v{padding: $sp1 0;}
+ .p2-v{padding: $sp2 0;}
+ .m2{margin:  $sp2;}
+ .m1-r{margin-right: $sp1;}
+
+ span.label{display: inline-block; width: 72px;}
+
+ .full{width: 100%; margin:0; padding: 0;}
+ .container{width: 100%; margin:$sp2;}
+ .clear{clear: both;display: inline-block;}
+  /* Extra small devices (phones, 776px and down) */
+ @media only screen and (max-width: 776px) {
+ .s-title{margin:150px $sp1 150px 0;}
+ .s-intro{margin: 30px $sp1 0 0; padding-right: $sp2;}
+ .s-full{width: 100%; margin: 0 auto; padding-right: $sp1}
+ .s-half{width: 47%; float:left; padding-right: $sp1;}
+ .s-hide{display: none;}
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 776px) {
+ .l-title{margin: 150px; display: inline-block;}
+ .l-intro{margin: 0 150px;}
+ .l-full{width: 100%; margin: 0 auto; padding: $sp1;}
+ .l-half{width: 47%; float: left; padding-right: $sp1;}
+ .l-col12{width: 712px; margin: 0 auto;}
+ .l-col2{width: 92px; float: left;padding-right: $sp1;}
+ .l-col4{width: 216px; float: left; padding-right: $sp1}
+ .l-col6{width: 348px; float: left; padding-right: $sp1}
+ .l-col4-r{width: 216px; float: right; padding-right: $sp1}
+ .l-col6-r{width: 348px; float: right;; padding-right: $sp2}
+ }
+ /* Large devices (laptops/desktops, 992px and up) */
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+ }
