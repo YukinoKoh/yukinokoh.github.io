@@ -5,6 +5,7 @@ $color_sub1: #898887;
 $color_sub2: #C3C1C2;
 $color_y: #07CBCE;
 $color_y_hover: #06A5A7;
+$color_paper: #fafafa;
 /* pink: #E9C5BD green1: 4ED9B9; green2: 07CBCE */
 
 @font-face {
@@ -20,6 +21,7 @@ $font_body_space: 0.04em;
 $font_body_size: 18px;
 $font_sub_size: 0.8em;
 $font_sub_lineheight: 1.5em;
+$font_sub_lineheight_mobile: 48px;
 $sp1: 16px;
 $sp2: 32px;
 /*
@@ -34,20 +36,21 @@ body{
   color: $color_base;
   font-family: $font_body;
   letter-spacing: $font_body_space;
-  font-size: $font_body_size;
-}
-ul.n-b{list-style-type: none; margin: 0; padding: 0;
-  font-family: $font_body; line-height: $font_sub_lineheight;
-  font-size: $font_sub_size;
-}
+  font-size: $font_body_size;}
+ul.n-b{list-style-type: none; margin: 0; padding: 0;line-height: $font_sub_lineheight;
+  font-family: $font_body; font-size: $font_sub_size;}
+ul.n-b-p{list-style-type: none; margin: 0; padding: 0;
+    font-family: $font_body; font-size: $font_sub_size;}
+.bg-color-pager{background-color: $color_paper;}
+.color_y{color:$color_y;}
 
 /*
  * type
  */
 h1{font-family: $font_title; font-weight: $font_title_weight; font-style: $font_title_style;
-  font-size: 47px; color: $color_y;}
-h2{font-family: $font_body; font-size: $font_body_size; color: $color_base;}
-h3{font-family: $font_body; font-size: $font_body_size; color: $color_sub1;
+  font-size: 48px; color: $color_y;}
+h2{font-family: $font_title; font-size: 24px; color: $color_y;}
+h3{font-family: $font_body; font-size: $font_body_size; color: $color_y;
    margin-top: 0;}
 h4{font-family: $font_title; font-weight: $font_title_weight; font-style: $font_title_style;
   font-size: $font_body_size; color: $color_y; margin: 40px 0 20px 0}
@@ -57,10 +60,15 @@ a, a:visited, a:active{
   color: $color_base; text-decoration: none;
   border-bottom: 1px solid $color_y}
   a:hover{border-bottom: 1px solid $color_y_hover;}
-a.sub, a.sub:visited, a.sub:hover, a.sub:active{color: $color_sub1;text-decoration: none;
+h2 a, h2 a:visited,h2 a:active{color: $color_y;text-decoration: none;
+      border-bottom: 1px solid $color_y}
+  h2 a:hover{color: $color_y_hover;}
+a.sub, a.sub:visited, a.sub:active{color: $color_sub1;text-decoration: none;
   border-bottom: 1px solid $color_y}
+  a.sub:hover{color:$color_base;}
 a.footer, a.footer:visited, a.footer:active{color: $color_sub1;text-decoration: none; border-bottom: none;}
-a.footer:hover{color: $color_base;}
+  a.footer:hover{color: $color_base;}
+.more{color: $color_y}
 /*
  *  layout
  */
@@ -77,10 +85,10 @@ a.footer:hover{color: $color_base;}
  .m1-r{margin-right: $sp1;}
 
  span.label{display: inline-block; width: 72px;}
-
  .full{width: 100%; margin:0; padding: 0;}
- .container{width: 100%; margin:$sp2;}
+ .container{width: 100%; padding:$sp2;}
  .clear{clear: both;display: inline-block;}
+
   /* Extra small devices (phones, 776px and down) */
  @media only screen and (max-width: 776px) {
  .s-title{margin:150px $sp1 150px 0;}
@@ -88,6 +96,7 @@ a.footer:hover{color: $color_base;}
  .s-full{width: 100%; margin: 0 auto; padding-right: $sp1}
  .s-half{width: 47%; float:left; padding-right: $sp1;}
  .s-hide{display: none;}
+ ul.n-b-p{line-height: $font_sub_lineheight_mobile;}
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -102,6 +111,7 @@ a.footer:hover{color: $color_base;}
  .l-col6{width: 348px; float: left; padding-right: $sp1}
  .l-col4-r{width: 216px; float: right; padding-right: $sp1}
  .l-col6-r{width: 348px; float: right;; padding-right: $sp2}
+ ul.n-b-p{line-height: $font_sub_lineheight;}
  }
  /* Large devices (laptops/desktops, 992px and up) */
  /* Extra large devices (large laptops and desktops, 1200px and up) */

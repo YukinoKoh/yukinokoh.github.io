@@ -1,0 +1,238 @@
+/* pink: #E9C5BD green1: 4ED9B9; green2: 07CBCE */
+@font-face {
+  font-family: "ClarikaProGeo-Lt";
+  src: url("../webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
+/*
+ * test
+ */
+.test-mark1 {
+  background-color: #efefef; }
+
+.test-mark2 {
+  background-color: #dfdfdf; }
+
+/*
+ * base
+ */
+body {
+  color: #2B2A40;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  letter-spacing: 0.04em;
+  font-size: 18px; }
+
+ul.n-b {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-size: 0.8em; }
+
+ul.n-b-p {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-size: 0.8em; }
+
+.bg-color-pager {
+  background-color: #fafafa; }
+
+.color_y {
+  color: #07CBCE; }
+
+/*
+ * type
+ */
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+  color: #07CBCE; }
+
+h2 {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  color: #07CBCE; }
+
+h3 {
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-size: 18px;
+  color: #07CBCE;
+  margin-top: 0; }
+
+h4 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #07CBCE;
+  margin: 40px 0 20px 0; }
+
+.sub {
+  color: #898887;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-size: 0.8em; }
+
+a, a:visited, a:active {
+  color: #2B2A40;
+  text-decoration: none;
+  border-bottom: 1px solid #07CBCE; }
+
+a:hover {
+  border-bottom: 1px solid #06A5A7; }
+
+h2 a, h2 a:visited, h2 a:active {
+  color: #07CBCE;
+  text-decoration: none;
+  border-bottom: 1px solid #07CBCE; }
+
+h2 a:hover {
+  color: #06A5A7; }
+
+a.sub, a.sub:visited, a.sub:active {
+  color: #898887;
+  text-decoration: none;
+  border-bottom: 1px solid #07CBCE; }
+
+a.sub:hover {
+  color: #2B2A40; }
+
+a.footer, a.footer:visited, a.footer:active {
+  color: #898887;
+  text-decoration: none;
+  border-bottom: none; }
+
+a.footer:hover {
+  color: #2B2A40; }
+
+.more {
+  color: #07CBCE; }
+
+/*
+ *  layout
+ */
+body {
+  width: 100%;
+  margin: 0; }
+
+.p1 {
+  padding: 16px; }
+
+.p2 {
+  padding: 32px; }
+
+.p1-h {
+  padding: 0 16px; }
+
+.p2-h {
+  padding: 0 32px; }
+
+.p1-v {
+  padding: 16px 0; }
+
+.p2-v {
+  padding: 32px 0; }
+
+.m2 {
+  margin: 32px; }
+
+.m1-r {
+  margin-right: 16px; }
+
+span.label {
+  display: inline-block;
+  width: 72px; }
+
+.full {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  padding: 32px; }
+
+.clear {
+  clear: both;
+  display: inline-block; }
+
+/* Extra small devices (phones, 776px and down) */
+@media only screen and (max-width: 776px) {
+  .s-title {
+    margin: 150px 16px 150px 0; }
+
+  .s-intro {
+    margin: 30px 16px 0 0;
+    padding-right: 32px; }
+
+  .s-full {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 16px; }
+
+  .s-half {
+    width: 47%;
+    float: left;
+    padding-right: 16px; }
+
+  .s-hide {
+    display: none; }
+
+  ul.n-b-p {
+    line-height: 48px; } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 776px) {
+  .l-title {
+    margin: 150px;
+    display: inline-block; }
+
+  .l-intro {
+    margin: 0 150px; }
+
+  .l-full {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px; }
+
+  .l-half {
+    width: 47%;
+    float: left;
+    padding-right: 16px; }
+
+  .l-col12 {
+    width: 712px;
+    margin: 0 auto; }
+
+  .l-col2 {
+    width: 92px;
+    float: left;
+    padding-right: 16px; }
+
+  .l-col4 {
+    width: 216px;
+    float: left;
+    padding-right: 16px; }
+
+  .l-col6 {
+    width: 348px;
+    float: left;
+    padding-right: 16px; }
+
+  .l-col4-r {
+    width: 216px;
+    float: right;
+    padding-right: 16px; }
+
+  .l-col6-r {
+    width: 348px;
+    float: right;
+    padding-right: 32px; }
+
+  ul.n-b-p {
+    line-height: 1.5em; } }
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=style-y.css.map */
