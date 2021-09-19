@@ -4,12 +4,11 @@ function intro_add() {
   <br /><br />
   Currently, I work as a product manager after creating base UX for the product at
   <a href="https://home.kpmg/jp/en/home/about/kit.html" target="_blank">KPMG Ignition Tokyo</a>.
+  Beside the work, as NPO <a href="http://hexagonux.com/tokyo" target="_blank">Haxagon UX</a> organizer, I take time to support womxn & non-binary folx in UX.
   <br /><br />
   Previously I worked at <a href="https://www.baidu.com/" target="_blank">Baidu., Inc</a>,
   where I designed IME to help 17 million users enjoy communication in more unique ways.
-  <br /><br />
-  Since 2019, I work as an organizer at <a href="http://hexagonux.com/tokyo" target="_blank">Haxagon UX</a> to empower and support womxn & non-binary folx in UX.
-  </h2
+  </h2>
   <div class="s-full l-col6">
     <h4>Talks</h4>
     <ul class="n-b">

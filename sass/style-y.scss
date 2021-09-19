@@ -5,7 +5,7 @@ $color_sub1: #898887;
 $color_sub2: #C3C1C2;
 $color_y: #07CBCE;
 $color_y_hover: #06A5A7;
-$color_paper: #fafafa;
+$color_paper: #faf5f5;
 /* pink: #E9C5BD green1: 4ED9B9; green2: 07CBCE */
 
 @font-face {
@@ -41,7 +41,7 @@ ul.n-b{list-style-type: none; margin: 0; padding: 0;line-height: $font_sub_lineh
   font-family: $font_body; font-size: $font_sub_size;}
 ul.n-b-p{list-style-type: none; margin: 0; padding: 0;
     font-family: $font_body; font-size: $font_sub_size;}
-.bg-color-pager{background-color: $color_paper;}
+.bg-paper{background-color: $color_paper;}
 .color_y{color:$color_y;}
 
 /*
