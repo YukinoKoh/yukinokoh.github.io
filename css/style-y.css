@@ -39,7 +39,7 @@ ul.n-b-p {
   background-color: #faf5f5; }
 
 .color_y {
-  color: #07CBCE; }
+  color: #06aBbE; }
 
 /*
  * type
@@ -49,17 +49,18 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 48px;
-  color: #07CBCE; }
+  color: #06aBbE; }
 
 h2 {
   font-family: "Lora", serif;
   font-size: 24px;
-  color: #07CBCE; }
+  color: #06aBbE;
+  line-height: 36px; }
 
 h3 {
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-size: 18px;
-  color: #07CBCE;
+  color: #06aBbE;
   margin-top: 0; }
 
 h4 {
@@ -67,7 +68,7 @@ h4 {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  color: #07CBCE;
+  color: #06aBbE;
   margin: 40px 0 20px 0; }
 
 .sub {
@@ -78,23 +79,23 @@ h4 {
 a, a:visited, a:active {
   color: #2B2A40;
   text-decoration: none;
-  border-bottom: 1px solid #07CBCE; }
+  border-bottom: 1px solid #06aBbE; }
 
 a:hover {
-  border-bottom: 1px solid #06A5A7; }
+  border-bottom: 1px solid #017597; }
 
 h2 a, h2 a:visited, h2 a:active {
-  color: #07CBCE;
+  color: #06aBbE;
   text-decoration: none;
-  border-bottom: 1px solid #07CBCE; }
+  border-bottom: 1px solid #06aBbE; }
 
 h2 a:hover {
-  color: #06A5A7; }
+  color: #017597; }
 
 a.sub, a.sub:visited, a.sub:active {
   color: #898887;
   text-decoration: none;
-  border-bottom: 1px solid #07CBCE; }
+  border-bottom: 1px solid #06aBbE; }
 
 a.sub:hover {
   color: #2B2A40; }
@@ -108,7 +109,7 @@ a.footer:hover {
   color: #2B2A40; }
 
 .more {
-  color: #07CBCE; }
+  color: #06aBbE; }
 
 /*
  *  layout

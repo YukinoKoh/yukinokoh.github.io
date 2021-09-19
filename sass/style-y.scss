@@ -3,8 +3,8 @@ $color_test2: #dfdfdf;
 $color_base: #2B2A40;
 $color_sub1: #898887;
 $color_sub2: #C3C1C2;
-$color_y: #07CBCE;
-$color_y_hover: #06A5A7;
+$color_y: #06aBbE;
+$color_y_hover: #017597;
 $color_paper: #faf5f5;
 /* pink: #E9C5BD green1: 4ED9B9; green2: 07CBCE */
 
@@ -49,7 +49,7 @@ ul.n-b-p{list-style-type: none; margin: 0; padding: 0;
  */
 h1{font-family: $font_title; font-weight: $font_title_weight; font-style: $font_title_style;
   font-size: 48px; color: $color_y;}
-h2{font-family: $font_title; font-size: 24px; color: $color_y;}
+h2{font-family: $font_title; font-size: 24px; color: $color_y;line-height:36px;}
 h3{font-family: $font_body; font-size: $font_body_size; color: $color_y;
    margin-top: 0;}
 h4{font-family: $font_title; font-weight: $font_title_weight; font-style: $font_title_style;
