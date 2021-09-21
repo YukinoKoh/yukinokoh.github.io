@@ -20,6 +20,13 @@ body {
   letter-spacing: 0.04em;
   font-size: 18px; }
 
+ul.b {
+  margin: 0 0 0 16px;
+  padding: 0;
+  line-height: 1.5em;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-size: 0.8em; }
+
 ul.n-b {
   list-style-type: none;
   margin: 0;
@@ -186,6 +193,11 @@ span.label {
     float: left;
     margin: 0 auto; }
 
+  .s-full-img {
+    width: 90%;
+    float: left;
+    margin: 0 auto; }
+
   .s-half {
     width: 47%;
     float: left; }
@@ -217,32 +229,44 @@ span.label {
   .l-col12 {
     width: 712px;
     float: inherit;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex; }
 
   .l-col2 {
     width: 92px;
     float: left;
-    padding-right: 16px; }
+    padding-right: 16px;
+    display: flex; }
 
   .l-col4 {
     width: 216px;
     float: left;
-    padding-right: 16px; }
+    padding-right: 16px;
+    margin: 0 16px; }
 
   .l-col6 {
     width: 348px;
     float: left;
-    padding-right: 16px; }
+    padding-right: 16px;
+    margin: 0 16px; }
+
+  .l-col8 {
+    width: 460px;
+    float: left;
+    padding-right: 16px;
+    margin: 0 16px; }
 
   .l-col4-r {
     width: 216px;
     float: right;
-    padding-right: 16px; }
+    padding-right: 16px;
+    margin: 0 16px; }
 
   .l-col6-r {
     width: 348px;
     float: right;
-    padding-right: 32px; }
+    padding-right: 32px;
+    margin: 0 16px; }
 
   ul.n-b-p {
     line-height: 1.5em; } }

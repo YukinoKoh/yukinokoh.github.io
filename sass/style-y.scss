@@ -37,6 +37,8 @@ body{
   font-family: $font_body;
   letter-spacing: $font_body_space;
   font-size: $font_body_size;}
+ul.b{margin: 0 0 0 16px; padding: 0;line-height: $font_sub_lineheight;
+    font-family: $font_body; font-size: $font_sub_size;}
 ul.n-b{list-style-type: none; margin: 0; padding: 0;line-height: $font_sub_lineheight;
   font-family: $font_body; font-size: $font_sub_size;}
 ul.n-b-p{list-style-type: none; margin: 0; padding: 0;
@@ -97,6 +99,8 @@ a.footer, a.footer:visited, a.footer:active{color: $color_sub1;text-decoration: 
  .s-title{margin:150px $sp1 150px 0;}
  .s-intro{margin: 30px $sp1 0 0; padding-right: $sp2;}
  .s-full{width: 100%; float:left; margin: 0 auto;}
+
+ .s-full-img{width: 90%; float:left; margin: 0 auto;}
  .s-half{width: 47%; float:left;}
  .s-hide{display: none;}
  ul.n-b-p{line-height: $font_sub_lineheight_mobile;}
@@ -106,14 +110,15 @@ a.footer, a.footer:visited, a.footer:active{color: $color_sub1;text-decoration: 
  @media only screen and (min-width: 776px) {
  .l-title{margin: 150px; display: inline-block;}
  .l-intro{margin: 0 150px;}
- .l-full{width: 100%; margin: 0 auto; padding: $sp1;}
+ .l-full{width: 100%; margin: 0 auto; padding: $sp1; }
  .l-half{width: 47%; float: left; padding-right: $sp1;}
- .l-col12{width: 712px;float: inherit; margin: 0 auto;}
- .l-col2{width: 92px; float: left;padding-right: $sp1;}
- .l-col4{width: 216px; float: left; padding-right: $sp1}
- .l-col6{width: 348px; float: left; padding-right: $sp1}
- .l-col4-r{width: 216px; float: right; padding-right: $sp1}
- .l-col6-r{width: 348px; float: right;; padding-right: $sp2}
+ .l-col12{width: 712px;float: inherit; margin: 0 auto; display: flex;}
+ .l-col2{width: 92px; float: left;padding-right: $sp1; display: flex;}
+ .l-col4{width: 216px; float: left; padding-right: $sp1; margin: 0 $sp1;}
+ .l-col6{width: 348px; float: left; padding-right: $sp1;margin: 0 $sp1;}
+ .l-col8{width: 460px; float: left; padding-right: $sp1;margin: 0 $sp1;}
+ .l-col4-r{width: 216px; float: right; padding-right: $sp1; margin: 0 $sp1;}
+ .l-col6-r{width: 348px; float: right;padding-right: $sp2; margin: 0 $sp1;}
  ul.n-b-p{line-height: $font_sub_lineheight;}
  }
  /* Large devices (laptops/desktops, 992px and up) */
