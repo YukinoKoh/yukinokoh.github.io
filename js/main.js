@@ -7,7 +7,7 @@ function intro_add() {
   Beside the work, I take time as NPO <a href="http://hexagonux.com/tokyo" target="_blank">Haxagon UX</a> organizer to support womxn & non-binary folx in UX.
   <br /><br />
   Previously I worked at <a href="https://www.baidu.com/" target="_blank">Baidu., Inc</a>,
-  where I designed IME to help over 17 million users enjoy communication in more unique ways.
+  where I designed IME to help over 17 million users enjoy communication more uniquely.
   </h2>
   <div class="s-full l-col6">
     <h4>Talks</h4>

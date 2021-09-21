@@ -71,10 +71,20 @@ h4 {
   color: #06aBbE;
   margin: 40px 0 20px 0; }
 
+h5 {
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8em;
+  color: #2B2A40; }
+
 .sub {
   color: #898887;
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-size: 0.8em; }
+
+.center {
+  text-align: center; }
 
 a, a:visited, a:active {
   color: #2B2A40;
@@ -124,23 +134,26 @@ body {
 .p2 {
   padding: 32px; }
 
-.p1-h {
+.ph-1 {
   padding: 0 16px; }
 
-.p2-h {
+.ph-2 {
   padding: 0 32px; }
 
-.p1-v {
+.pv-1 {
   padding: 16px 0; }
 
-.p2-v {
+.pv-2 {
   padding: 32px 0; }
 
 .m2 {
   margin: 32px; }
 
-.m1-r {
+.mr-1 {
   margin-right: 16px; }
+
+.mt-2 {
+  margin-top: 32px; }
 
 span.label {
   display: inline-block;
@@ -170,13 +183,12 @@ span.label {
 
   .s-full {
     width: 100%;
-    margin: 0 auto;
-    padding-right: 16px; }
+    float: left;
+    margin: 0 auto; }
 
   .s-half {
     width: 47%;
-    float: left;
-    padding-right: 16px; }
+    float: left; }
 
   .s-hide {
     display: none; }
@@ -204,6 +216,7 @@ span.label {
 
   .l-col12 {
     width: 712px;
+    float: inherit;
     margin: 0 auto; }
 
   .l-col2 {
