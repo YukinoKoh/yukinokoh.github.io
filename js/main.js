@@ -1,6 +1,6 @@
 function intro_add() {
   let intro_text = `
-  <h2>Nice to meet you! I'm Yukino. I learnt drawing, which to me is a way to see the world with careful attention.
+  <h5>Nice to meet you! I'm Yukino. I learnt drawing, which to me is a way to see the world with careful attention.
   <br /><br />
   Currently, I work as a product manager after creating base UX for the product at
   <a href="https://home.kpmg/jp/en/home/about/kit.html" target="_blank">KPMG Ignition Tokyo</a>.
@@ -8,7 +8,7 @@ function intro_add() {
   <br /><br />
   Previously I worked at <a href="https://www.baidu.com/" target="_blank">Baidu., Inc</a>,
   where I designed IME to help over 17 million users enjoy communication more uniquely.
-  </h2>
+  </h5>
   <div class="s-full l-col6">
     <h4>Talks</h4>
     <ul class="n-b">
