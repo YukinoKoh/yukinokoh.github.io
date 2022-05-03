@@ -3,10 +3,10 @@
   font-family: "ClarikaProGeo-Lt";
   src: url("../webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
 /*
- * test
+ * color
  */
-.test-mark1 {
-  background-color: #efefef; }
+.color_FEB63F {
+  background-color: #FEB63F; }
 
 .test-mark2 {
   background-color: #dfdfdf; }
@@ -41,6 +41,14 @@ ul.n-b-p {
   padding: 0;
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-size: 0.8em; }
+
+ul.n-b-p-sub {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-size: 0.8em; 
+  color: #ababab;}
 
 .bg-paper {
   background-color: #faf5f5; }
@@ -86,7 +94,7 @@ h5 {
   color: #2B2A40; }
 
 .sub {
-  color: #898887;
+  color: #ababab;
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-size: 0.8em; }
 
@@ -110,7 +118,7 @@ h2 a:hover {
   color: #017597; }
 
 a.sub, a.sub:visited, a.sub:active {
-  color: #898887;
+  color: #ababab;
   text-decoration: none;
   border-bottom: 1px solid #06aBbE; }
 
@@ -118,7 +126,7 @@ a.sub:hover {
   color: #2B2A40; }
 
 a.footer, a.footer:visited, a.footer:active {
-  color: #898887;
+  color: #ababab;
   text-decoration: none;
   border-bottom: none; }
 
@@ -153,12 +161,17 @@ body {
 .pv-2 {
   padding: 32px 0; }
 
+.m0 {
+  margin:0;}
+
 .m2 {
   margin: 32px; }
 
 .mr-1 {
   margin-right: 16px; }
 
+.mt-1 {
+    margin-top: 16px; }
 .mt-2 {
   margin-top: 32px; }
 
@@ -178,6 +191,15 @@ span.label {
 .clear {
   clear: both;
   display: inline-block; }
+
+.height-full {
+  height:100%;}  
+.height-400 {
+  height:400px;}
+.height-400 {
+  height:500px;} 
+.center{
+  margin: 0 auto}
 
 /* Extra small devices (phones, 776px and down) */
 @media only screen and (max-width: 776px) {
@@ -199,14 +221,18 @@ span.label {
     margin: 0 auto; }
 
   .s-half {
-    width: 47%;
+    width: 50%;
     float: left; }
 
   .s-hide {
     display: none; }
 
   ul.n-b-p {
-    line-height: 48px; } }
+    line-height: 48px; } 
+  
+  .s-hide{
+    display: none;}
+  }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 776px) {
   .l-title {
@@ -269,7 +295,10 @@ span.label {
     margin: 0 16px; }
 
   ul.n-b-p {
-    line-height: 1.5em; } }
+    line-height: 1.5em; } 
+  .l-hide{
+    display: none;}
+  }
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 

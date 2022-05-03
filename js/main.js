@@ -1,25 +1,50 @@
-function intro_add() {
-  let intro_text = `
-  <h5>Nice to meet you! I'm Yukino. I learnt drawing, which to me is a way to see the world with careful attention.
-  <br /><br />
-  Currently, I work as a product manager after creating base UX for the product at
-  <a href="https://home.kpmg/jp/en/home/about/kit.html" target="_blank">KPMG Ignition Tokyo</a>.
-  Beside the work, I take time as NPO <a href="http://hexagonux.com/tokyo" target="_blank">Haxagon UX</a> organizer to support womxn & non-binary folx in UX.
-  <br /><br />
-  Previously I worked at <a href="https://www.baidu.com/" target="_blank">Baidu., Inc</a>,
-  where I designed IME to help over 17 million users enjoy communication more uniquely.
-  </h5>
-  <div class="s-full l-col6">
-    <h4>Talks</h4>
-    <ul class="n-b">
-      <li><span class="label">2020 </span><a href="https://interactiondesignday.org/twentytwenty/events/" target="_blank">IxDD 2020 </a></li>
-      <li><span class="label">2017 </span>UX Talk Tokyo</li>
-      <li><span class="label">2017 </span><a href="https://www.codechrysalis.io/" target="_blank">Code Chrysalis</a></li>
-      <li><span class="label">2016 </span>UX Talk Tokyo</li>
-      <li><span class="label">2014 </span><a href="https://abc.android-group.jp/2014w/conference/design/">Japan Android Group 2014</a></li>
-    </ul>
-  </div>`;
+function add_text() {
+  const header_text = `
+    `;
 
-  document.getElementById("intro_text").innerHTML = intro_text;
-  document.getElementById("intro_add").style.display= "none";
+  const footer_text = `
+    <section class="container clear">
+      <div class="mr-1">
+        <div class="s-intro l-intro">
+          <h4>Thank you for taking the time to look through my site. Please feel free to send me feedback or get in touch.</h4>
+        </div>
+      </div>
+    </section>
+    <div class="container clear">
+      <div class="s-full l-full">
+        <a href="index-april.html"><h3>Yukino Kohmoto</h3></a>
+      </div>
+      <div class="s-full l-col6">
+        <ul class="n-b-p">
+          <li><a href="observe.html">Observe</a></li>
+          <li><a href="imagine.html">Imagine</a></li>
+          <li><a href="visualize.html">Visualize</a></li>
+        </ul>
+      </div>
+        <div class="s-full l-col6-r">
+          <ul class="n-b-p">
+            <li><span class="label">Email</span>
+              <a href="mailto:yukinokohmoto@gmail.com" target="_blank">yukino.kohmoto@gmail.com</a></li>
+            <li><span class="label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/yukino-komoto-a7345a19/" target="_blank">/yukino-komoto-a7345a19</a></li>
+            <li><span class="label">Instagram</span>
+              <a href="https://www.instagram.com/yukinokoh/" target="_blank">/yukinokoh</a></li>
+            <li><span class="label">GitHub</span>
+              <a href="https://github.com/YukinoKoh" target="_blank">/YukinoKoh</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container clear">
+        <div class="mr-1">
+          <p class="sub">This website is set with Clarika Pro from
+            <a class="footer" href="https://www.behance.net/wildxedge" target="_blank">Brandon Knap</a>
+            and <a href="https://fonts.google.com/specimen/Lora?query=lora" target="_blank" class="footer">Lora</a>
+            from <a class="footer" href="http://www.cyreal.org/" target="_blank">Cyreal Fonts</a>.
+            This site tracks its stats with <a class="footer" href="https://marketingplatform.google.com/about/analytics/" target="_blank">Google Analytics</a>.</p>
+        </div>
+      </div>`  
+
+  // <document.getElementById("headerNavi").innerHTML = header_text;
+  document.getElementById("footerNavi").innerHTML = footer_text;
 }
+window.onload = add_text;
