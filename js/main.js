@@ -12,7 +12,7 @@ function add_text() {
     </section>
     <div class="container clear">
       <div class="s-full l-full">
-        <a href="index-april.html"><h3>Yukino Kohmoto</h3></a>
+        <a href="index.html"><h3>Yukino Kohmoto</h3></a>
       </div>
       <div class="s-full l-col6">
         <ul class="n-b-p">
