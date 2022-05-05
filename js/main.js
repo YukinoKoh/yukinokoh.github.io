@@ -3,13 +3,7 @@ function add_text() {
     `;
 
   const footer_text = `
-    <section class="container clear">
-      <div class="mr-1">
-        <div class="s-intro l-intro">
-          <h4>Thank you for taking the time to look through my site. Please feel free to send me feedback or get in touch.</h4>
-        </div>
-      </div>
-    </section>
+    
     <div class="container clear">
       <div class="s-full l-full">
         <a href="index.html"><h3>Yukino Kohmoto</h3></a>

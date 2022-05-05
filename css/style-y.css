@@ -70,11 +70,12 @@ h2 {
   font-family: "Lora", serif;
   font-size: 24px;
   color: #06aBbE;
-  line-height: 36px; }
+  line-height: 36px; 
+  margin: 26px 0 44px 0}
 
 h3 {
   font-family: "ClarikaProGeo-Lt", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #06aBbE;
   margin-top: 0; }
 
@@ -116,6 +117,14 @@ h2 a, h2 a:visited, h2 a:active {
 
 h2 a:hover {
   color: #017597; }
+
+h3 a, h3 a:visited, h3 a:active {
+  color: #06aBbE;
+  text-decoration: none;
+  border-bottom: 1px solid #06aBbE; }
+  
+h3 a:hover {
+  color: #017597; }  
 
 a.sub, a.sub:visited, a.sub:active {
   color: #ababab;
@@ -213,7 +222,7 @@ span.label {
   .s-full {
     width: 100%;
     float: left;
-    margin: 0 auto; }
+    margin: 16px auto; }
 
   .s-full-img {
     width: 90%;
@@ -244,8 +253,7 @@ span.label {
 
   .l-full {
     width: 100%;
-    margin: 0 auto;
-    padding: 16px; }
+    margin: 16px auto;}
 
   .l-half {
     width: 47%;
