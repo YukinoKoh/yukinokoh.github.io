@@ -1,0 +1,111 @@
+/* @import url(https//weloveiconfonts.com/api/?family=fontelico);
+/*
+ * Base and Layout
+ */
+body {
+  margin: 15px 0;
+  color: #191b1a;
+  padding: 0;
+  /* user double quotes */
+  font-family: "Open+Sans", "Universe", "Helvetica", sans-serif; }
+
+/* better to use class over IDs */
+.site {
+  margin: 0;
+  padding: 0; }
+
+.mb-1 {
+  margin-bottom: 10px; }
+
+.mb-2 {
+  margin-bottom: 20px; }
+
+.ml-1 {
+  margin-left: 10px; }
+
+.mr-1 {
+  margin-right: 10px; }
+
+a:link,
+a:hover,
+a:visited {
+  color: #191b1a;
+  text-decoration: underline; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+/*
+ * Typography
+ */
+h1 {
+  font-size: 20px;
+  font-weight: 300; }
+
+h2 {
+  margin-top: 34px;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #9a9a9f; }
+
+h3 {
+  font-size: 22px;
+  font-weight: 300; }
+
+h5 {
+  color: #9a9a9f; }
+
+h5 a:link,
+h5 a:visited {
+  color: #9a9a9f; }
+
+/*
+ * Section
+ */
+/* Header */
+header {
+  top: -5px;
+  margin-top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  -webkit-box-shadow: 0px 10px 14px -5px rgba(224, 224, 224, 0.35);
+  -moz-box-shadow: 0px 10px 14px -5px rgba(224, 224, 224, 0.35);
+  box-shadow: 0px 10px 14px -5px rgba(224, 224, 224, 0.35); }
+
+.header-logo {
+  padding-top: 15px;
+  height: 56px; }
+
+/* section top */
+.top-quote {
+  color: #191b1a;
+  font-size: 16px;
+  top: 155px;
+  right: 20px;
+  z-index: 1;
+  position: absolute; }
+
+.top-img {
+  width: 100%;
+  z-index: 0;
+  position: relative; }
+
+@media screen and (max-width: 530px) {
+  .top-quote {
+    font-size: 12px;
+    top: 140px; } }
+
+/* footer */
+footer {
+  color: #adadaf; }
+
+footer a:link,
+footer a:visited {
+  color: #adadaf;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #191b1a; }
