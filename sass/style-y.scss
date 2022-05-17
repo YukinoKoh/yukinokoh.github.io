@@ -1,7 +1,7 @@
 $color_test1: #efefef;
 $color_test2: #dfdfdf;
 $color_base: #2B2A40;
-$color_sub1: #ababab;
+$color_sub1: #898887;
 $color_sub2: #C3C1C2;
 $color_y: #06aBbE;
 $color_y_hover: #017597;
@@ -43,8 +43,6 @@ ul.n-b{list-style-type: none; margin: 0; padding: 0;line-height: $font_sub_lineh
   font-family: $font_body; font-size: $font_sub_size;}
 ul.n-b-p{list-style-type: none; margin: 0; padding: 0;
     font-family: $font_body; font-size: $font_sub_size;}
-ul.n-b-p{list-style-type: none; margin: 0; padding: 0;
-    font-family: $font_body; font-size: $font_sub_size; color: $color_sub1}
 .bg-paper{background-color: $color_paper;}
 .color_y{color:$color_y;}
 
@@ -88,10 +86,8 @@ a.a-n{border: none;}
  .ph-2{padding: 0 $sp2;}
  .pv-1{padding: $sp1 0;}
  .pv-2{padding: $sp2 0;}
- .m0{margin:0;}
  .m2{margin:  $sp2;}
  .mr-1{margin-right: $sp1;}
- .mt-1{margin-top: $sp1;}
  .mt-2{margin-top: $sp2;}
 
  span.label{display: inline-block; width: 72px;}
