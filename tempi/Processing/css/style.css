@@ -1,0 +1,26 @@
+body{
+    background-color:#1e1e1e;
+    margin:20px;
+    font-family:'Helvetica', Arial, sans-serif;
+    font-weight:lighter;
+}
+.demo{
+    margin-top: 30px;
+}
+.desc{
+    margin-top:40px;
+    color:#8b8b8b;
+}
+a:link{
+    color:#8b8b8b;
+    text-decoration-line:underline;
+}
+a:visited{
+    color:#8b8b8b;
+}
+a:hover{
+    color:#ababab;
+}
+a:active
+    color:#8b8b8b;
+}

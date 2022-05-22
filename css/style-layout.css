@@ -1,0 +1,139 @@
+/*
+ *  layout
+ */
+ body {
+  width: 100%;
+  margin: 0; }
+
+.full {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 32px 0; }
+
+.container {
+  width: 100%;
+  padding: 32px; }
+
+.clear {
+  clear: both;
+  display: inline-block; }
+
+  .p1 {
+    padding: 16px; }
+  
+  .p2 {
+    padding: 32px; }
+  
+  .ph-1 {
+    padding: 0 16px; }
+  
+  .ph-2 {
+    padding: 0 32px; }
+  
+  .pv-1 {
+    padding: 16px 0; }
+  
+  .pv-2 {
+    padding: 32px 0; }
+  
+  .m2 {
+    margin: 32px; }
+  
+  .mr-1 {
+    margin-right: 16px; }
+  
+  .mt-2 {
+    margin-top: 32px; }
+
+.center {
+  text-align: center;}
+.height-500{
+  height: 500px;
+}  
+/* Extra small devices (phones, 776px and down) */
+@media only screen and (max-width: 776px) {
+  .s-title {
+    margin: 150px 16px 150px 32px; }
+
+  .s-intro {
+    margin: 0px 32px;
+    padding: 32px 0px; }
+
+  .s-full {
+    width: 100%;
+    float: left;
+    margin: 0 auto; }
+
+  .s-full-img {
+    width: 90%;
+    float: left;
+    margin: 0 auto; }
+
+  .s-half {
+    width: 47%;
+    float: left; }
+
+  .s-hide {
+    display: none; }
+ }
+/* Small devices (portrait tablets and large phones, 776px and up) */
+@media only screen and (min-width: 776px) {
+  .l-title {
+    margin: 150px;
+    display: inline-block; }
+
+  .l-intro {
+    margin: 64px 150px; }
+  
+  .l-full-img{
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+  }  
+  .l-half {
+    width: 47%;
+    float: left;
+    padding-right: 16px; }
+
+  .l-col12 {
+    width: 712px;
+    float: inherit;
+    margin: 0 auto;
+    display: flex; }
+
+  .l-col2 {
+    width: 92px;
+    float: left;
+    padding-right: 16px;
+    display: flex; }
+
+  .l-col4 {
+    width: 216px;
+    float: left;
+    padding-right: 16px;
+    margin: 0 16px; }
+
+  .l-col6 {
+    width: 348px;
+    float: left;
+    padding-right: 16px;
+    margin: 0 16px; }
+
+  .l-col8 {
+    width: 460px;
+    float: left;
+    padding-right: 16px;
+    margin: 0 16px; }
+
+  .l-col4-r {
+    width: 216px;
+    float: right;
+    padding-right: 16px;
+    margin: 0 16px; }
+
+  .l-col6-r {
+    width: 348px;
+    float: right;
+    padding-right: 32px;
+    margin: 0 16px; }
+}
