@@ -11,6 +11,9 @@ function add_text() {
     <div class="container clear">
       <div class="full m1">
         <a href="../index.html"><h3>Tempi</h3></a>
+        <p> It's a personal project space to practice js, exploring graphical methods.<br/>
+        Tempi is a plural noun of tempo, speed or rate of activity or music. 
+        </p>
       </div>
     </div>
   `
