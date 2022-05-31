@@ -4,6 +4,9 @@
 @font-face {
   font-family: "ClarikaProGeo-Lt";
   src: url("../webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
+  @font-face {
+    font-family: "ClarikaProGeo-Lt";
+    src: url("../webFonts/ClarikaProGeoMd/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoMd/font.woff") format("woff"); }
 
 body {
   font-family: "ClarikaProGeo-Lt", sans-serif;
@@ -29,10 +32,11 @@ h1 {
 
 /* project introduction title*/  
 h2 {
-  font-family: "Lora", serif;
-  font-size: 24px;
+  font-family: "ClarikaProGeo-Md", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
   color: #06aBbE;
-  line-height: 36px; }
+  line-height: 46px; }
 
 /* yukino kohmoto */ 
 h3 {
@@ -43,20 +47,21 @@ h3 {
 
 /* Talks */  
 h4 {
+  font-family: "ClarikaProGeo-Md", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 34px;
+  color: #000;
+  margin: 40px 0 20px 0; }
+
+/* thank you for reading my profile */
+h5 {
   font-family: "Lora", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  color: #06aBbE;
-  margin: 40px 0 20px 0; }
-
-/* project body */
-h5 {
-  font-family: "ClarikaProGeo-Lt", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.8em;
-  color: #2B2A40; }
+  color: #06aBbE; }
 
 a.footer, a.footer:visited, a.footer:active {
   color: #898887;
@@ -106,16 +111,19 @@ span.label {
 .bg-paper {
   background-color: #faf5f5; }
 .bg-simeji{
-  background-color: #FEB700;
+  background-color: #FDCC48
+  /* # FEB700, FcCc3a;, FAC73C;*/
 }
 .title-simeji{
   color: #2B2A40;;
 }
+.bg-white{
+  background-color: #fff;}
 .bg-hexagon{
-  background-color: #fff;
+  background-color: #EE766B;
 }
-.bg-urban{
-  background-color:#06aBbE;
+.title{
+  color: #000;
 }
 .title-urban{
   color:#fff;
