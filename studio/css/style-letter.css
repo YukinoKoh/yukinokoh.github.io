@@ -1,26 +1,34 @@
 .bg-paper{
   background-color: #E5E0D8;
 }
-h3{
-    color: #483C3C;
-    font-weight: 100;
+
+body {  
+  color: #2B2A40;
+  font-family: "ClarikaProGeo-Lt", sans-serif;    
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  font-size: 14px; }
+
+/*
+ *  Type
+ */
+ h3 {
+  color: #483C3C;
   }
-.jp{
-  font-size: 0.8em;}
 
 a, a:visited, a:active {
-  color: #fefefe;}
+  color: #bababa;}
 a:hover{
   color: #483C3C;}
 
-.sub{
-    color: #fefefe;}
-a.sub, a.sub:visited, a.sub:active {
-    color: #fefefe;}
-a.sub:hover {
+.footer-ref{
+    color: #bababa;}
+a.footer-ref, a.footer-ref:visited, a.footer-ref:active {
+    color: #bababa;}
+a.footer-ref:hover {
   color: #483C3C; }
 a.footer, a.footer:visited, a.footer:active {
-  color: #fefefe;}
+  color: #bababa;}
 a.footer:hover{
   color: #483C3C;}
 

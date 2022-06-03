@@ -4,9 +4,9 @@
 @font-face {
   font-family: "ClarikaProGeo-Lt";
   src: url("../webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
-  @font-face {
-    font-family: "ClarikaProGeo-Lt";
-    src: url("../webFonts/ClarikaProGeoMd/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoMd/font.woff") format("woff"); }
+@font-face {
+  font-family: "ClarikaProGeo-Md";
+  src: url("../webFonts/ClarikaProGeoMd/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoMd/font.woff") format("woff"); }
 
 body {
   font-family: "ClarikaProGeo-Lt", sans-serif;
@@ -111,8 +111,8 @@ span.label {
 .bg-paper {
   background-color: #faf5f5; }
 .bg-simeji{
-  background-color: #FDCC48
-  /* # FEB700, FcCc3a;, FAC73C;*/
+  background-color: #FFDA4B;
+  /* #FDCC48*/
 }
 .title-simeji{
   color: #2B2A40;;
