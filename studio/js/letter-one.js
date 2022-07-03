@@ -1,5 +1,3 @@
-const folders = ['hello_nature','file_name' ];
-
 function add_text() {
     const header_text = `
       <div class="container clear">

@@ -57,7 +57,7 @@
 .height-500{
   height: 500px;
 }  
-/* Extra small devices (phones, 776px and down) */
+/* Small devices (phones, 776px and down) */
 @media only screen and (max-width: 776px) {
   .s-title {
     margin: 150px 16px 150px 32px; }
@@ -88,7 +88,7 @@
   .s-hide {
     display: none; }
  }
-/* Small devices (portrait tablets and large phones, 776px and up) */
+/* full (portrait tablets and large phones, 776px and up) */
 @media only screen and (min-width: 776px) {
   .l-title {
     margin: 150px;
@@ -139,6 +139,12 @@
 
   .l-col8 {
     width: 460px;
+    float: left;
+    padding-right: 16px;
+    margin: 0 16px 0 0; }
+
+  .l-col10 {
+    width: 552px;
     float: left;
     padding-right: 16px;
     margin: 0 16px 0 0; }
