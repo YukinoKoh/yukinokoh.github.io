@@ -1,0 +1,19 @@
+/* animation */
+.anime-fadeout{
+    animation-name: fadeout;
+    animation-duration: 1s;
+  }
+  @keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0}
+  }
+
+.anime-fadein{
+    animation-name: fadein;
+    animation-duration: 1.5s;
+  }
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1}
+  }
+  

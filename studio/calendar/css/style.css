@@ -15,7 +15,7 @@ body {
   background-color: #787878;
  }
 .bg-paper {
-  background-color: #E5E5E5; }
+  background-color: #010101; }
 .calendar-desc{
   color: #000;
   font-weight: 400;
@@ -32,46 +32,180 @@ a:hover{
   color: #000;}
 
 
+
 /* footer color */
 footer-ref{
   color: #787878;}
 footer{
-  color: #787878;}
+  color: #4b4b4b;}
 a.footer, a.footer:visited, a.footer:active {
   color: #787878;}
 a.footer:hover{
-  color: #000;}
+  color: #fff;}
 
 /* calendar 1 */
 .c1-top{
   background-color: #1D1D1D;
-  height: 48px}
-#c1{
+  height: 48px;
+  width:100%;
+  padding:0;
+}
+#c1-calendar{
   background-color: #000;
-  height: 900px;
-  padding: 32px;
-  color: #fff}
-
-  
+  color: #fff;
+}
  
-.c1-today{
+.c1-unit{
   font-weight: 200;
   color: #11EDAB;
   margin: 0;
   padding: 12px 16px;
   font-size: 18px;
-  float: right;
+  height: 23px;
+  vertical-align: middle;
+  display: flex;
+}
+.today{
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* century */
+
+.c1-c-calendar{
+  padding: 32px;
+}
+.c1-c-year{ 
+  font-weight: 100;
+  margin: 0;
+  width:100%;
+}
+.c1-c-year-name{
+  color: #adadad;
+  font-size: 12px;
+  font-weight: 200;
+  width: 100;
+ }
+
+
+.c1-c-month{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 2px;
+  margin-top: 0px;
+}
+.c1-c-month-name{
+ color: #8b8b8b;
+ font-size: 10px;
+ font-weight: 400;
+}
+.c1-c-week{
+  padding: 0px 0px 6px 0px;
+}
+.c1-c-day{
+  font-size: 4px;
+  margin: 0px 2px 0px 0px;
+  padding: 0;
+  color: #8b8b8b;
+  font-weight:100;
+  float: left;
+  width: 4px;
+  height: 4px;
+  text-align: center;
+}
+.c1-c-day-today{
+  background-color: #11EDAB;
+  border-radius: 50%;
+  display: inline-block;
+}
+.c1-c-day-padding-0{margin-left:0}
+.c1-c-day-padding-1{margin-left:6px}
+.c1-c-day-padding-2{margin-left:12px}
+.c1-c-day-padding-3{margin-left:18px}
+.c1-c-day-padding-4{margin-left:24px}
+.c1-c-day-padding-5{margin-left:30px}
+.c1-c-day-padding-6{margin-left:36px}
+
+
+/* DECADE */
+.c1-d-calendar{
+  padding: 32px;
+}
+.c1-d-year{ 
+  font-weight: 400;
+  margin: 0;
+  width:100%;
+}
+.c1-d-year-name{
+  color: #adadad;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100;
+ }
+
+
+.c1-d-month{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 2px;
+  margin-top: 6px;
+}
+.c1-d-month-name{
+ color: #4d4d4d;
+ font-size: 12px;
+ font-weight: 400;
+}
+.c1-d-week{
+  padding: 0px 0px 12px 0px;
+}
+.c1-d-day{
+  font-size: 8px;
+  margin: 0px 3px 0px 0px;
+  padding: 0;
+  color: #8b8b8b;
+  font-weight:200;
+  float: left;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+}
+.c1-d-day-today{
+  background-color: #11EDAB;
+  border-radius: 50%;
+  display: inline-block;
+}
+.c1-d-day-padding-0{margin-left:0}
+.c1-d-day-padding-1{margin-left:11px}
+.c1-d-day-padding-2{margin-left:22px}
+.c1-d-day-padding-3{margin-left:33px}
+.c1-d-day-padding-4{margin-left:44px}
+.c1-d-day-padding-5{margin-left:55px}
+.c1-d-day-padding-6{margin-left:66px}
+
+/* YEAR */
+
+.c1-y-calendar{
+  padding: 32px;
 }
 .c1-y-year{ 
-  font-size: 32px;
   font-weight: 400;
   margin: 0 0 10px 0;
 }
+
+.c1-y-year-name{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  width: 100;
+ }
+
 .c1-y-month{
   width: 156px;
   height: 120px;
   float: left;
-  margin-right: 10px;
+  margin-right: 0px;
   margin-top: 20px;
 }
 .c1-y-month-name{
@@ -84,24 +218,19 @@ a.footer:hover{
 }
 .c1-y-day{
   font-size: 9px;
-  padding: 0px 10px 0px 0px;
-  color: #fff;
+  margin: 0px 10px 0px 0px;
+  padding: 0;
+  color: #8b8b8b;
   font-weight:200;
   float: left;
   width: 11px;
+  height: 11px;
   text-align: center;
 }
 .c1-y-day-today{
-  height: 16px;
-  width: 8px;
   background-color: #11EDAB;
   border-radius: 50%;
   display: inline-block;
-
-}
-.q-end{
-  padding: 0;
-  margin-right: 0px;
 }
 .c1-y-day-padding-0{margin-left:0}
 .c1-y-day-padding-1{margin-left:21px}
@@ -110,4 +239,50 @@ a.footer:hover{
 .c1-y-day-padding-4{margin-left:84px}
 .c1-y-day-padding-5{margin-left:105px}
 .c1-y-day-padding-6{margin-left:126px}
+
+/* DECADE */
+.c1-m-calendar{
+  padding: 32px;
+}
+.c1-m-month-{
+  float:left;
+}
+.c1-m-month-name{
+  font-size: 28px;
+  font-weight: 200;
+  color: #8b8b8b;
+}
+.c1-m-week{
+  padding: 0px 0px 60px 0px;
+}
+.c1-m-day{
+  font-size: 22px;
+  margin: 0px 64px 0px 0px;
+  color: #8b8b8b;
+  font-weight:400;
+  float: left;
+  width: 28px;
+  height:28px;
+  text-align: center;
+}
+.c1-m-date{
+  color: #6b6b6b;
+  font-weight:200;
+}
+.c1-m-day-today{
+  background-color: #11EDAB;
+  border-radius: 50%;
+  display: inline-block;
+}
+.c1-m-day-padding-0{margin-left:0}
+.c1-m-day-padding-1{margin-left:92px}
+.c1-m-day-padding-2{margin-left:184px}
+.c1-m-day-padding-3{margin-left:276px}
+.c1-m-day-padding-4{margin-left:368px}
+.c1-m-day-padding-5{margin-left:460px}
+.c1-m-day-padding-6{margin-left:552px}
+.q-end{
+  margin-right: 0px;
+}
+
 

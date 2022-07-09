@@ -16,6 +16,12 @@ a, a:visited, a:active {
   text-align: right;}
 .center{
   text-align: center;}
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
   
 
 /*
