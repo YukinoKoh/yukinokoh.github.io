@@ -2,7 +2,7 @@
  * font
  */
 body {  
-  color: #fff;
+  color: #5c5c5c;
   font-family: 'Source Sans Pro', sans-serif;    
   font-weight: 300;
   letter-spacing: 0.04em;
@@ -11,27 +11,24 @@ body {
 /*
  * base
  */
- .bg-header{
-  background-color: #787878;
+:root {
+  --calendar: #fff;
+  --calendar-header: #131AD7;
+  --calendar-today: #F36158;
+  --calendar-navi: #F36158;
+}
+
+.bg-header{
+  background-color: #eeeeee;
  }
 .bg-paper {
-  background-color: #010101; }
-.calendar-desc{
-  color: #000;
-  font-weight: 400;
-}
+  background-color: var(--calendar) }
 h3{
-  color: #fff;}
-.color2{
-  color: #989B79;}
-.color1{
-  color: #D1C1AC;}
+  color: #5C5C5C;}
 a, a:visited, a:active {
   color: #3A3E2F;}
 a:hover{
   color: #000;}
-
-
 
 /* footer color */
 footer-ref{
@@ -43,21 +40,26 @@ a.footer, a.footer:visited, a.footer:active {
 a.footer:hover{
   color: #fff;}
 
-/* calendar 1 */
+
+  /* calendar common */
 .c1-top{
-  background-color: #1D1D1D;
+  background-color: var(--calendar-header) ;
   height: 48px;
   width:100%;
   padding:0;
 }
 #c1-calendar{
-  background-color: #000;
-  color: #fff;
+  color: #000;
+}
+.c1-day-today{
+  background-color: var(--calendar-today) ;
+  border-radius: 50%;
+  display: inline-block;
 }
  
 .c1-unit{
   font-weight: 200;
-  color: #11EDAB;
+  color: var(--calendar-navi) ;
   margin: 0;
   padding: 12px 16px;
   font-size: 18px;
@@ -81,9 +83,9 @@ a.footer:hover{
   width:100%;
 }
 .c1-c-year-name{
-  color: #adadad;
+  color: #000;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 400;
   width: 100;
  }
 
@@ -114,11 +116,7 @@ a.footer:hover{
   height: 4px;
   text-align: center;
 }
-.c1-c-day-today{
-  background-color: #11EDAB;
-  border-radius: 50%;
-  display: inline-block;
-}
+
 .c1-c-day-padding-0{margin-left:0}
 .c1-c-day-padding-1{margin-left:6px}
 .c1-c-day-padding-2{margin-left:12px}
@@ -138,7 +136,7 @@ a.footer:hover{
   width:100%;
 }
 .c1-d-year-name{
-  color: #adadad;
+  color: #000;
   font-size: 18px;
   font-weight: 400;
   width: 100;
@@ -171,11 +169,7 @@ a.footer:hover{
   height: 8px;
   text-align: center;
 }
-.c1-d-day-today{
-  background-color: #11EDAB;
-  border-radius: 50%;
-  display: inline-block;
-}
+
 .c1-d-day-padding-0{margin-left:0}
 .c1-d-day-padding-1{margin-left:11px}
 .c1-d-day-padding-2{margin-left:22px}
@@ -209,7 +203,7 @@ a.footer:hover{
   margin-top: 20px;
 }
 .c1-y-month-name{
- color: #adadad;
+ color: #000;
  font-size: 18px;
  font-weight: 400;
 }
@@ -220,18 +214,14 @@ a.footer:hover{
   font-size: 9px;
   margin: 0px 10px 0px 0px;
   padding: 0;
-  color: #8b8b8b;
-  font-weight:200;
+  color: #000;
+  font-weight:400;
   float: left;
   width: 11px;
   height: 11px;
   text-align: center;
 }
-.c1-y-day-today{
-  background-color: #11EDAB;
-  border-radius: 50%;
-  display: inline-block;
-}
+
 .c1-y-day-padding-0{margin-left:0}
 .c1-y-day-padding-1{margin-left:21px}
 .c1-y-day-padding-2{margin-left:42px}
@@ -240,49 +230,84 @@ a.footer:hover{
 .c1-y-day-padding-5{margin-left:105px}
 .c1-y-day-padding-6{margin-left:126px}
 
-/* DECADE */
-.c1-m-calendar{
-  padding: 32px;
-}
-.c1-m-month-{
-  float:left;
-}
-.c1-m-month-name{
-  font-size: 28px;
-  font-weight: 200;
-  color: #8b8b8b;
-}
-.c1-m-week{
-  padding: 0px 0px 60px 0px;
-}
-.c1-m-day{
-  font-size: 22px;
-  margin: 0px 64px 0px 0px;
-  color: #8b8b8b;
-  font-weight:400;
-  float: left;
-  width: 28px;
-  height:28px;
-  text-align: center;
-}
-.c1-m-date{
-  color: #6b6b6b;
-  font-weight:200;
-}
-.c1-m-day-today{
-  background-color: #11EDAB;
-  border-radius: 50%;
-  display: inline-block;
-}
-.c1-m-day-padding-0{margin-left:0}
-.c1-m-day-padding-1{margin-left:92px}
-.c1-m-day-padding-2{margin-left:184px}
-.c1-m-day-padding-3{margin-left:276px}
-.c1-m-day-padding-4{margin-left:368px}
-.c1-m-day-padding-5{margin-left:460px}
-.c1-m-day-padding-6{margin-left:552px}
-.q-end{
-  margin-right: 0px;
-}
+/* month */
 
 
+/* Small devices (phones, 776px and down) */
+@media only screen and (max-width: 776px) {
+  .c1-m-calendar{
+    padding: 16px;
+  }
+  .c1-m-month-{
+    float:left;
+  }
+  .c1-m-month-name{
+    font-size: 28px;
+    font-weight: 200;
+    color: #8b8b8b;
+  }
+  .c1-m-week{
+    padding: 0px 0px 60px 0px;
+  }
+  .c1-m-day{
+    font-size: 22px;
+    margin: 0px 14px 0px 0px;
+    color: #8b8b8b;
+    font-weight:400;
+    float: left;
+    width: 28px;
+    height:28px;
+    text-align: center;
+  }
+  .c1-m-date{
+    color: #6b6b6b;
+    font-weight:200;
+  }
+
+  .c1-m-day-padding-0{margin-left:0}
+  .c1-m-day-padding-1{margin-left:42px}
+  .c1-m-day-padding-2{margin-left:84px}
+  .c1-m-day-padding-3{margin-left:126px}
+  .c1-m-day-padding-4{margin-left:168px}
+  .c1-m-day-padding-5{margin-left:210px}
+  .c1-m-day-padding-6{margin-left:272px}
+}
+/* full (portrait tablets and large phones, 776px and up) */
+@media only screen and (min-width: 776px) {
+  .c1-m-calendar{
+    padding: 32px;
+  }
+  .c1-m-month-{
+    float:left;
+  }
+  .c1-m-month-name{
+    font-size: 28px;
+    font-weight: 200;
+    color: #8b8b8b;
+  }
+  .c1-m-week{
+    padding: 0px 0px 60px 0px;
+  }
+  .c1-m-day{
+    font-size: 22px;
+    margin: 0px 64px 0px 0px;
+    color: #000;
+    font-weight:400;
+    float: left;
+    width: 28px;
+    height:28px;
+    text-align: center;
+  }
+  .c1-m-date{
+    color: #6b6b6b;
+    font-weight:200;
+  }
+ 
+  .c1-m-day-padding-0{margin-left:0}
+  .c1-m-day-padding-1{margin-left:92px}
+  .c1-m-day-padding-2{margin-left:184px}
+  .c1-m-day-padding-3{margin-left:276px}
+  .c1-m-day-padding-4{margin-left:368px}
+  .c1-m-day-padding-5{margin-left:460px}
+  .c1-m-day-padding-6{margin-left:552px}
+}

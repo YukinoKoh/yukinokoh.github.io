@@ -63,7 +63,7 @@ function calendarMonth(passedYear, passedMonth, unitSize){
   for (let calendarDay = 1; calendarDay <= num_day[passedMonth]; calendarDay++){
     // organize css
     todayDay = calendarDay == day;
-    if (todayMonth && todayDay && todayYear){cssToday = `c1-${unitSize}-day-today`;}else{cssToday='';}
+    if (todayMonth && todayDay && todayYear){cssToday = `c1-day-today`;}else{cssToday='';}
     if (calendarDay ==1){cssFirstDay = `c1-${unitSize}-day-padding-`+calendarDate.toString();
       } else {cssFirstDay = ''}
     if (calendarDate ==6){cssFriday = "q-end";} else {cssFriday = ''};
@@ -168,7 +168,6 @@ function unitSmaller(){
     calendarToday();
 }
 function unitlarger(){
-  calendarToday(1)
   if (unit < 4) {unit +=1;}
   calendarToday();
 }
