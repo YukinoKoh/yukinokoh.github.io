@@ -1,4 +1,4 @@
-const folders = ['calendar', 'yamato_uta'];
+const folders = ['yamato_uta'];
 
 function dom_index_card(file_name){
   file_name_title = file_name.charAt(0).toUpperCase()+file_name.slice(1).replace('_', ' ').replace('_', ' ');
