@@ -1,4 +1,11 @@
 /*
+ * base
+ */
+ :root {
+  --theme: #06aBbE;
+  --paper: #faf5f5;
+}
+/*
  * type
  */
 @font-face {
@@ -18,7 +25,7 @@ body {
 a, a:visited, a:active {
   color: #2B2A40;
   text-decoration: none;
-  border-bottom: 1px solid #06aBbE; }
+  border-bottom: 1px solid var(--theme);   }
 a:hover {
   border-bottom: 1px solid #017597; }
 
@@ -28,32 +35,33 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 48px;
-  color: #06aBbE; }
+  color: var(--theme);   }
 
 /* project introduction title*/  
 h2 {
-  font-family: "ClarikaProGeo-Md", sans-serif;
+  font-family: "Lora", serif;
   font-weight: 500;
   font-size: 44px;
-  color: #06aBbE;
-  line-height: 46px; }
+  color: var(--theme);  
+  line-height: 46px;
+  margin: 80px 0; }
 
 /* yukino kohmoto */ 
 h3 {
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-size: 18px;
-  color: #06aBbE;
+  color: var(--theme);  
   margin-top: 0; }
 
 /* Talks */  
 h4 {
-  font-family: "ClarikaProGeo-Md", sans-serif;
+  font-family: "Lora", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 32px;
   line-height: 34px;
   color: #000;
-  margin: 40px 0 20px 0; }
+  margin: 40px 0; }
 
 /* thank you for reading my profile */
 h5 {
@@ -61,7 +69,7 @@ h5 {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  color: #06aBbE; }
+  color: var(--theme);   }
 
 a.footer, a.footer:visited, a.footer:active {
   color: #898887;
@@ -107,12 +115,13 @@ span.label {
  .sub {
   color: #898887;}
  .color_y {
-  color: #06aBbE; } 
+  color: var(--theme);   } 
 .bg-paper {
-  background-color: #faf5f5; }
+  background-color: var(--paper); }
 .bg-simeji{
-  background-color: #FFDA4B;
-  /* #FDCC48*/
+  background: linear-gradient(to bottom,  #FFDA4B,  #F7F5F2 90%, var(--paper));
+  /* background-color: #FFDA4B; */
+  /* background: linear-gradient(to bottom, #FFF, #FFC778 30%, #F89174 60%, #748af8); */
 }
 .title-simeji{
   color: #2B2A40;;
@@ -120,7 +129,8 @@ span.label {
 .bg-white{
   background-color: #fff;}
 .bg-hexagon{
-  background-color: #EE766B;
+  background: linear-gradient(to bottom,  var(--paper),  #F7F5F2 90%, var(--paper));
+  /* background-color: #EE766B; */
 }
 .title{
   color: #000;

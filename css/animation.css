@@ -1,0 +1,13 @@
+.up{
+    opacity: 0;
+    transition: all 1s ease;
+  }
+   
+.up.show {
+    opacity: 1;
+    transform: none;
+  }
+   
+.op{
+    transform: translate(0, 20px);
+  }
