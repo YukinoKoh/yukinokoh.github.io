@@ -1,9 +1,13 @@
 /*
- * base
+ * base color
+   theme; previous #06aBbE
  */
  :root {
-  --theme: #06aBbE;
+  --theme: #000;
+  --highlight: #06aBbE;
   --paper: #faf5f5;
+  --paper1: #f7f9fa;
+  --sub: #898887;
 }
 /*
  * type
@@ -19,7 +23,7 @@ body {
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #2B2A40; }
 
 a, a:visited, a:active {
@@ -35,7 +39,7 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 48px;
-  color: var(--theme);   }
+  color: var(--highlight);   }
 
 /* project introduction title*/  
 h2 {
@@ -51,9 +55,11 @@ h3 {
   font-family: "ClarikaProGeo-Lt", sans-serif;
   font-size: 18px;
   color: var(--theme);  
-  margin-top: 0; }
+  font-weight: 600;
+  margin-top: 0; 
+  float: left;}
 
-/* Talks */  
+/* project (sub) title  */  
 h4 {
   font-family: "Lora", serif;
   font-weight: 500;
@@ -63,37 +69,40 @@ h4 {
   color: #000;
   margin: 40px 0; }
 
-/* thank you for reading my profile */
+/* cv title */
 h5 {
-  font-family: "Lora", serif;
+  font-family: "ClarikaProGeo-Lt", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
   color: var(--theme);   }
 
 a.footer, a.footer:visited, a.footer:active {
-  color: #898887;
+  color: var(--sub);
   text-decoration: none;
   border-bottom: none; }
 a.footer:hover {
   color: #2B2A40; }
 
 /* list */
+/* role in project */
 ul.b {
   margin: 0 0 0 16px;
   padding: 0;
   line-height: 1.5em;}
 
-ul.n-b {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5em;}
-
+/* talks */
 ul.n-b-p {
   list-style-type: none;
   margin: 0;
   padding: 0;}
+
+/* cv */
+ul.n-b-tab {
+    list-style-type: none;
+    margin: 0 0 0 16px;
+    padding: 0;
+    line-height: 1.5em;}
 
 span.label {
   display: inline-block;
@@ -113,11 +122,13 @@ span.label {
  * color
  */
  .sub {
-  color: #898887;}
+  color: var(--sub)}
  .color_y {
   color: var(--theme);   } 
 .bg-paper {
   background-color: var(--paper); }
+.bg-paper1 {
+  background-color: var(--paper1); }
 .bg-simeji{
   background: linear-gradient(to bottom,  #FFDA4B,  #F7F5F2 90%, var(--paper));
   /* background-color: #FFDA4B; */
@@ -137,4 +148,15 @@ span.label {
 }
 .title-urban{
   color:#fff;
+}
+
+/* menu */
+.header-burger{
+  width: 50px;
+  float: right;
+  color: var(--sub);
+  cursor: pointer;
+}
+.menu-icon{
+  width: 18px;
 }

@@ -11,3 +11,32 @@
 .op{
     transform: translate(0, 20px);
   }
+
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+.rotate-menu-to-open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  padding-top: 0px;
+  transition-duration: 0.5s;
+  width: 20px;
+}
+.rotate-menu-to-close {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  padding-top: 0px;
+  transition-duration: 0.7s;
+  width: 18px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}

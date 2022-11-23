@@ -1,5 +1,4 @@
 var Animation = function() {
-    
     if(scrollY >650){
         const title= document.getElementById('title-simeji').classList.add('show');}
     if(scrollY <630){
@@ -14,4 +13,3 @@ var Animation = function() {
         const title= document.getElementById('title-hex').classList.remove('show');}
 }
 window.addEventListener('scroll', Animation);
-
