@@ -72,6 +72,8 @@
 @media only screen and (max-width: 776px) {
   .s-title {
     margin: 150px 16px 150px 32px; }
+  .s-menu {
+    margin: 50px 32px; }
 
   .s-intro {
     margin: 0px 32px;

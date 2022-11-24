@@ -9,8 +9,7 @@ function openmenu(){
   // if it is true, the menu is open and action move to the opposite status
   if(icon.hasAttribute("menu")== true){
     // to close the menu
-    icon.removeAttribute("menu");
-    icon.removeAttribute("class");
+    icon.removeAttribute("menu", "class");
     icon.setAttribute("class", "rotate-menu-to-close");
     menu.removeAttribute("class");
     menu.setAttribute("class","hidden");
@@ -18,9 +17,8 @@ function openmenu(){
     // to open the menu
     icon.setAttribute("menu","on")
     icon.setAttribute("class", "rotate-menu-to-open");
-    
     menu.removeAttribute("class");
-    menu.setAttribute("class","show fill s-title l-title");
+    menu.setAttribute("class","show fill s-menu l-title");
   }
 }
 
