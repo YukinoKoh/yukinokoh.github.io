@@ -8,6 +8,8 @@
   --paper: #faf5f5;
   --paper1: #f7f9fa;
   --sub: #898887;
+  --serif: "Lora", serif;
+  --sansserif: "ClarikaProGeo-Lt", sans-serif;
 }
 /*
  * type
@@ -20,7 +22,7 @@
   src: url("../webFonts/ClarikaProGeoMd/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoMd/font.woff") format("woff"); }
 
 body {
-  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-family: var(--sansserif); 
   font-weight: 500;
   font-style: normal;
   font-size: 0.9em;
@@ -35,7 +37,7 @@ a:hover {
 
 /* hello, I enjoy */ 
 h1 {
-  font-family: "Lora", serif;
+  font-family: var(--serif);
   font-weight: 500;
   font-style: normal;
   font-size: 48px;
@@ -43,7 +45,7 @@ h1 {
 
 /* project introduction title*/  
 h2 {
-  font-family: "Lora", serif;
+  font-family: var(--serif);
   font-weight: 500;
   font-size: 44px;
   color: var(--theme);  
@@ -52,7 +54,7 @@ h2 {
 
 /* yukino kohmoto */ 
 h3 {
-  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-family: var(--serif);
   font-size: 18px;
   color: var(--theme);  
   font-weight: 600;
@@ -61,7 +63,7 @@ h3 {
 
 /* project (sub) title  */  
 h4 {
-  font-family: "Lora", serif;
+  font-family: var(--serif);
   font-weight: 500;
   font-style: normal;
   font-size: 32px;
@@ -71,7 +73,7 @@ h4 {
 
 /* cv title */
 h5 {
-  font-family: "ClarikaProGeo-Lt", sans-serif;
+  font-family:  var(--sansserif);
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
