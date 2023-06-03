@@ -1,0 +1,22 @@
+
+/* menu */
+.header-burger{
+  width: 50px;
+  float: right;
+  color: var(--sub);
+  cursor: pointer;
+}
+.menu-icon{
+  width: 18px;
+}
+/* Small devices (phones, 776px and down) */
+@media only screen and (max-width: 776px) {
+  .s-title {
+    margin: 150px 16px 150px 32px; }
+ }
+/* full (portrait tablets and large phones, 776px and up) */
+@media only screen and (min-width: 776px) {
+  .l-title {
+    margin: 150px;
+    display: inline-block; }
+}
