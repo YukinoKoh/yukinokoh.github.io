@@ -55,7 +55,7 @@ h4 {
   font-style: normal;
   font-size: 13px;
   color: var(--themecolor);
-  margin: 48px 0 6px 0;}
+  margin: 42px 0 6px 0;}
 h4 a, h4 a:visited,h4 a:active {
   text-decoration: none;
   border-bottom: none}  
@@ -85,8 +85,11 @@ h5 a, h5 a:visited,h5 a:active {
   border-bottom: none}
 ul.no-bulletpoint {
   list-style-type: none;
-  line-height: 24px; 
+  line-height: 15px; 
   margin:0;
+  padding:0;}
+li{
+  margin:8px 0;
   padding:0;}
 
 footer{
@@ -125,7 +128,7 @@ body {width: 100%; margin: 0; }
   .l-container-top {
     margin: 32px 150px; }
   .l-container-body {
-    margin: 100px 150px; }
+    margin: 120px 150px; }
   .l-container{
     margin: 64px;}
   .l-half {
