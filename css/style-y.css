@@ -5,13 +5,14 @@
  */
  :root {
   --themecolor: #000;
-  --basecolor:#2B2A40; 
-  --subcolor: #8b8b99;
-  --subhr: #ddddee;
-  --serif: "Lora", serif;
+  --basecolor:#6a6a7f; 
+  --subcolor: #9b9ba9;
+  --subhr: #eeeeff;
+  --serif: "Playfair",  serif;
   --sansserif: "ClarikaProGeo-Lt", sans-serif;
-  --sansserifbold: "ClarikaProGeo-Md", sans-serif;
+  --sansserifbold:'Heebo', sans-serif;
 }
+/* sans-serif: , "ClarikaProGeo-Md" */
 @font-face {
   font-family: "ClarikaProGeo-Lt";
   src: url("../webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
@@ -25,9 +26,9 @@
    *
    */
 body {
-  font-family: var(--sansserif); 
-  font-weight: 500;
-  font-size: 14px;
+  font-family: var(--serif); 
+  font-weight: 300;
+  font-size: 13px;
   color: var(--basecolor) }
 a, a:visited, a:active {
   color:  var(--basecolor);
@@ -36,11 +37,6 @@ a, a:visited, a:active {
 a:hover {
   color: var(--themecolor);
   border-bottom:1px sold var(--themecolor)}
-.sub {color: var(--subcolor)}
-.sub a, .sub a:visited, .sub a:active {
-  color:  var(--subcolor);
-  text-decoration: none;
-  border-bottom: none}
 
 h1 {font-family: var(--serif);}
 h2 {font-family: var(--serif);}
@@ -49,20 +45,42 @@ h3 {
   font-family: var(--serif);
   font-size: 18px;
   color: var(--themecolor);  
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 0; 
   float: left;}
-h4 {
-  font-family: var(--serif); }
 /* title cv */
+h4 {
+  font-family:  var(--serif);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--themecolor);
+  margin: 48px 0 6px 0;}
+h4 a, h4 a:visited,h4 a:active {
+  text-decoration: none;
+  border-bottom: none}  
+/* insta */  
 h5 {
-  font-family:  var(--sansserifbold);
-  font-weight: 600;
+  font-family: var(--serif);
+  font-weight: 500;
   font-style: normal;
   font-size: 14px;
-  color: var(--themecolor);
-  margin: 24px 0 8px 0;}
+  color: var(--themecolor); 
+}
 h5 a, h5 a:visited,h5 a:active {
+  color: var(--themecolor);
+  text-decoration: none;
+  border-bottom: none}
+
+
+.sub{
+  font-family: var(--sansserif);
+  color: var(--subcolor);
+  margin-top:8px;
+  font-size: 13px;
+}  
+.sub a, .sub a:visited, .sub a:active {
+  color:  var(--subcolor);
   text-decoration: none;
   border-bottom: none}
 ul.no-bulletpoint {
@@ -84,8 +102,6 @@ footer{
 body {width: 100%; margin: 0; }
 .full {width: 100%; margin: 0; padding: 0; }
 .clear {clear: both; display: inline-block; }
-.mt-1{
-  margin-top:8px;}
 .mt-2 {
   margin-top: 16px; }
 
@@ -106,8 +122,10 @@ body {width: 100%; margin: 0; }
  }
 /* full (portrait tablets and large phones, 776px and up) */
 @media only screen and (min-width: 776px) {
-  .l-intro {
-    margin: 64px 150px; }
+  .l-container-top {
+    margin: 32px 150px; }
+  .l-container-body {
+    margin: 100px 150px; }
   .l-container{
     margin: 64px;}
   .l-half {
