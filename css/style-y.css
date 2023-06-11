@@ -120,7 +120,8 @@ section{
     padding: 32px 0px; }
   .s-full {
     width: 100%;
-    float: left;}
+    float: left;
+    margin: 0 0 20px 0}
   .s-half {
     width: 47%;
     float: left; }
