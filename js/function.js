@@ -8,7 +8,7 @@ var imageContainer = document.getElementById("imageContainer");
 var width = document.body.clientWidth;
 var positionY = 60;
 var margin =20;
-var numImage = 13;
+var numImage = 17;
 
 document.addEventListener('DOMContentLoaded', function() {
     includeHTML()
