@@ -1,16 +1,9 @@
-var img3 = document.getElementById("img1");
-var img2 = document.getElementById("img2");
-var img3 = document.getElementById("img3");
-var img4 = document.getElementById("img4");
-var img5 = document.getElementById("img5");
-var img6 = document.getElementById("img6");
 var imageContainer = document.getElementById("imageContainer");
 var width = document.body.clientWidth;
 var positionY = 60;
 var margin =20;
 var colNum;
 var loadStart = 1
-var loadUntil = 10;
 var loadEnd = 19;
 var loadDone = false;
 
@@ -18,13 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
   includeHTML()
 }, false);
 window.addEventListener('load', function() {
-  placeImage()
+  placeImage(),
+  lazyload()
 }, false);
 window.addEventListener("resize", function() {
   placeImage()
 },false);
 
-window.addEventListener('scroll', function(){
+/* window.addEventListener('scroll', function(){
   if (loadDone==false){
     console.log('Y; '+ this.window.scrollY);
     if (colNum == 1 & window.scrollY > 3000){
@@ -42,6 +36,7 @@ window.addEventListener('scroll', function(){
     }
   } 
 },false);
+*/
 
 function openmenu(){
   var icon = document.getElementById("menu-icon");
@@ -91,7 +86,6 @@ async function includeHTML() {
     return 'resolved';
   }
 
-
 function placeImage(){
   width = document.body.clientWidth;
   var postionX=0;
@@ -100,7 +94,7 @@ function placeImage(){
   var positionYcol3 = positionY;
   if (width<768){
       colNum = 1;
-      for (var i = loadStart; i <= loadUntil; i++){
+      for (var i = loadStart; i <= loadEnd; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
           image.classList.remove('no-display');
@@ -113,7 +107,7 @@ function placeImage(){
 
   } else if (width<1024){ 
     colNum = 2;
-      for (var i = loadStart; i <= loadUntil; i++){
+      for (var i = loadStart; i <= loadEnd; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
           image.classList.remove('no-display');
@@ -130,7 +124,7 @@ function placeImage(){
       }
   } else{
     colNum = 3;
-      for (var i = loadStart; i <= loadUntil; i++){
+      for (var i = loadStart; i <= loadEnd; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
           image.classList.remove('no-display');
@@ -150,7 +144,6 @@ function placeImage(){
           } 
       }
   }
-  console.log(Math.max(positionYcol1,positionYcol2,positionYcol3));
   var containerHeight=Math.max(positionYcol1,positionYcol2,positionYcol3);
   imageContainer.style.height=containerHeight;
 }
