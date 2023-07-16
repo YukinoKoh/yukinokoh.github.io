@@ -26,8 +26,8 @@ window.addEventListener("resize", function() {
 
 window.addEventListener('scroll', function(){
   if (loadDone==false){
-    if (colNum == 1 & window.scrollY > 4000){
-      console.log('Y; '+ this.window.scrollY);
+    console.log('Y; '+ this.window.scrollY);
+    if (colNum == 1 & window.scrollY > 3000){
       loadUntil = loadEnd;
       placeImage();
       loadDone = true;
