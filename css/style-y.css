@@ -15,10 +15,10 @@
 /* sans-serif: , "ClarikaProGeo-Md" */
 @font-face {
   font-family: "ClarikaProGeo-Lt";
-  src: url("../webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
+  src: url("webFonts/ClarikaProGeoLt/font.woff2") format("woff2"), url("webFonts/ClarikaProGeoLt/font.woff") format("woff"); }
 @font-face {
   font-family: "ClarikaProGeo-Md";
-  src: url("../webFonts/ClarikaProGeoMd/font.woff2") format("woff2"), url("../webFonts/ClarikaProGeoMd/font.woff") format("woff"); }
+  src: url("webFonts/ClarikaProGeoMd/font.woff2") format("woff2"), url("webFonts/ClarikaProGeoMd/font.woff") format("woff"); }
 
   /*
    *
@@ -72,7 +72,6 @@ h5 a, h5 a:visited,h5 a:active {
   text-decoration: none;
   border-bottom: none}
 
-
 .sub{
   font-family: var(--serif);
   color: var(--subcolor);
@@ -94,6 +93,16 @@ li{
 
 footer{
   border-top: solid var(--subhr) 1px;
+}
+
+/*
+   *
+   * type
+   *
+   */
+
+.no-display{
+  display:none;
 }
 
 

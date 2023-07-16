@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4181333, 2021-09-16T09:24:18-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ClarikaProGeo-Lt by Wild Edge
+ * URL: https://www.myfonts.com/fonts/wild-edge/clarika-pro/geometric-light/
+ * Copyright: Copyright © 2020 by Wild Edge. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "ClarikaProGeo-Lt";
+  src: url('webFonts/ClarikaProGeoLt/font.woff2') format('woff2'), url('webFonts/ClarikaProGeoLt/font.woff') format('woff');
+}
+

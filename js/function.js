@@ -8,16 +8,39 @@ var imageContainer = document.getElementById("imageContainer");
 var width = document.body.clientWidth;
 var positionY = 60;
 var margin =20;
-var numImage = 17;
+var colNum;
+var loadStart = 1
+var loadUntil = 10;
+var loadEnd = 19;
+var loadDone = false;
 
 document.addEventListener('DOMContentLoaded', function() {
-    includeHTML()
+  includeHTML()
 }, false);
 window.addEventListener('load', function() {
   placeImage()
 }, false);
 window.addEventListener("resize", function() {
   placeImage()
+},false);
+
+window.addEventListener('scroll', function(){
+  if (loadDone==false){
+    if (colNum == 1 & window.scrollY > 4000){
+      console.log('Y; '+ this.window.scrollY);
+      loadUntil = loadEnd;
+      placeImage();
+      loadDone = true;
+    } else if (colNum == 2 & window.scrollY > 1000){
+      loadUntil = loadEnd;
+      placeImage();
+      loadDone = true;
+    } else if (colNum == 3 & window.scrollY > 700){
+      loadUntil = loadEnd;
+      placeImage();
+      loadDone = true;
+    }
+  } 
 },false);
 
 function openmenu(){
@@ -76,9 +99,11 @@ function placeImage(){
   var positionYcol2 = positionY;
   var positionYcol3 = positionY;
   if (width<768){
-      for (var i = 1; i <= numImage; i++){
+      colNum = 1;
+      for (var i = loadStart; i <= loadUntil; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
+          image.classList.remove('no-display');
           image.style.position='relative';
           image.style.float='left';
           image.style.left='';
@@ -86,10 +111,12 @@ function placeImage(){
           positionYcol1=positionYcol1+image.height+margin;
       }
 
-  } else if (width<1024){
-      for (var i = 1; i <= numImage; i++){
+  } else if (width<1024){ 
+    colNum = 2;
+      for (var i = loadStart; i <= loadUntil; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
+          image.classList.remove('no-display');
           image.style.position='absolute';
           if (i%2 == 1){
               image.style.left=postionX;
@@ -102,9 +129,11 @@ function placeImage(){
           } 
       }
   } else{
-      for (var i = 1; i <= numImage; i++){
+    colNum = 3;
+      for (var i = loadStart; i <= loadUntil; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
+          image.classList.remove('no-display');
           image.style.position='absolute';
           if (i%3 == 1){
               image.style.left=postionX;
