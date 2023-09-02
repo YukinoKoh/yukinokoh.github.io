@@ -6,56 +6,24 @@ var colNum;
 var loadStart = 1
 var loadEnd = 19;
 var loadDone = false;
+var language = 'EN';
 
 document.addEventListener('DOMContentLoaded', function() {
-  includeHTML()
+  includeHTML(),
+  placeImage()
 }, false);
-window.addEventListener('load', function() {
-  placeImage(),
-  lazyload()
-}, false);
+
 window.addEventListener("resize", function() {
   placeImage()
 },false);
 
-/* window.addEventListener('scroll', function(){
-  if (loadDone==false){
-    console.log('Y; '+ this.window.scrollY);
-    if (colNum == 1 & window.scrollY > 3000){
-      loadUntil = loadEnd;
-      placeImage();
-      loadDone = true;
-    } else if (colNum == 2 & window.scrollY > 1000){
-      loadUntil = loadEnd;
-      placeImage();
-      loadDone = true;
-    } else if (colNum == 3 & window.scrollY > 700){
-      loadUntil = loadEnd;
-      placeImage();
-      loadDone = true;
-    }
-  } 
-},false);
-*/
+window.addEventListener('load', function() {
+  placeImage()
+}, false);
 
-function openmenu(){
-  var icon = document.getElementById("menu-icon");
-  var menu = document.getElementById("menu");
-  // if it is true, the menu is open and action move to the opposite status
-  if(icon.hasAttribute("menu")== true){
-    // to close the menu
-    icon.removeAttribute("menu", "class");
-    icon.setAttribute("class", "rotate-menu-to-close");
-    menu.removeAttribute("class");
-    menu.setAttribute("class","hidden");
-  }else{
-    // to open the menu
-    icon.setAttribute("menu","on")
-    icon.setAttribute("class", "rotate-menu-to-open");
-    menu.removeAttribute("class");
-    menu.setAttribute("class","show fill s-menu l-title");
-  }
-}
+window.onload = function() {
+  placeImage()
+};
 
 async function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -146,4 +114,52 @@ function placeImage(){
   }
   var containerHeight=Math.max(positionYcol1,positionYcol2,positionYcol3);
   imageContainer.style.height=containerHeight;
+}
+
+function switchJP(){
+    document.getElementById('profile').innerHTML = '<div w3-include-html="res/jp.html"></div>';
+    includeHTML();
+}
+function switchEN(){
+  document.getElementById('profile').innerHTML = '<div w3-include-html="res/en.html"></div>';
+  includeHTML();
+}
+
+/* window.addEventListener('scroll', function(){
+  if (loadDone==false){
+    console.log('Y; '+ this.window.scrollY);
+    if (colNum == 1 & window.scrollY > 3000){
+      loadUntil = loadEnd;
+      placeImage();
+      loadDone = true;
+    } else if (colNum == 2 & window.scrollY > 1000){
+      loadUntil = loadEnd;
+      placeImage();
+      loadDone = true;
+    } else if (colNum == 3 & window.scrollY > 700){
+      loadUntil = loadEnd;
+      placeImage();
+      loadDone = true;
+    }
+  } 
+},false);
+*/
+
+function openmenu(){
+  var icon = document.getElementById("menu-icon");
+  var menu = document.getElementById("menu");
+  // if it is true, the menu is open and action move to the opposite status
+  if(icon.hasAttribute("menu")== true){
+    // to close the menu
+    icon.removeAttribute("menu", "class");
+    icon.setAttribute("class", "rotate-menu-to-close");
+    menu.removeAttribute("class");
+    menu.setAttribute("class","hidden");
+  }else{
+    // to open the menu
+    icon.setAttribute("menu","on")
+    icon.setAttribute("class", "rotate-menu-to-open");
+    menu.removeAttribute("class");
+    menu.setAttribute("class","show fill s-menu l-title");
+  }
 }

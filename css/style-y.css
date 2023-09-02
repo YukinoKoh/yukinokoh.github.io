@@ -8,6 +8,7 @@
   --basecolor:#6a6a7f; 
   --subcolor: #9b9ba9;
   --subhr: #eeeeff;
+  --background: #fff;
   --serif: "Playfair",  serif;
   --sansserif: "ClarikaProGeo-Lt", sans-serif;
   --imagemargin: 16px;
@@ -97,13 +98,28 @@ footer{
 
 /*
    *
-   * type
+   * other
    *
    */
 
 .no-display{
   display:none;
 }
+.button-language{
+  font-family: var(--serif);
+  background-color: var(--background) ;
+  border: none;
+  color: var(--themecolor);
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.button-language:hover {opacity: 1}
 
 
 /*

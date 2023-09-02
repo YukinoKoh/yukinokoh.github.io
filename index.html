@@ -26,38 +26,8 @@
     <header><div class="s-container m-container l-container">
       <div w3-include-html="res/header.html"></div> 
     </div></header>
-      <div id="imageContainer" class="container"><div class="s-container m-col12 l-col12">
-
-        <img id="img1" loading="lazy" src="img/2004_woodblock_riverside.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img2" loading="lazy" src="img/img19.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img3" loading="lazy" src="img/img141.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img4" loading="lazy" src="img/img84.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img5" loading="lazy" src="img/2004_print_faces.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img6" loading="lazy" src="img/img18.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img7" loading="lazy" src="img/img140.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img8" loading="lazy" src="img/img68.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img9" loading="lazy" src="img/img142.jpg" class="s-full m-col6 l-col4 no-display" />       
-        <img id="img10" loading="lazy" src="img/img145.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img11" loading="lazy" src="img/2016-2023-banana-222.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img12" loading="lazy" src="img/img17.jpg" class="s-full m-col6 l-col4 no-display" />
-
-        <img id="img13" loading="lazy" src="img/img131.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img14" loading="lazy" src="img/img146.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img15" loading="lazy" src="img/img83.jpg" class="s-full m-col6 l-col4 no-display" /> 
-        <img id="img16" loading="lazy" src="img/img147.jpg" class="s-full m-col6 l-col4 no-display" />
-        <img id="img17" loading="lazy" src="img/img79.jpg" class="s-full m-col6 l-col4 no-display" />
-
-        <img id="img18" loading="lazy" src="img/img85.jpg" class="s-full m-col6 l-col4 no-display" /> 
-
-        <img id="img19" loading="lazy" src="img/img143.jpg" class="s-full m-col6 l-col4 no-display" />
-        <!--
-        <img id="img11" src="img/img77.jpg" class="s-full m-col6 l-col4" />
-        <img id="img15" src="img/2021-2023-onsen-supernatualdeluxe.jpg" class="s-full m-col6 l-col4" />-->
-
-
-
-      </div></div>
-    
+      
+    <div id="imageContainer" class="container"><div w3-include-html="res/image.html"></div> </div>
 
     <!--<section class="full clear">
           <div class="sub">Super Natural Deluxe, Chiba, Japan 2023</div>
@@ -67,33 +37,14 @@
     
     <section >
       <div class="s-container l-container-body">
-        <h4>Public Collections</h4>
-        <ul class="no-bulletpoint">
-          <li>Toito City Hall, Tokyo, Japan</li>
-          <li>Minakami City Hall, Gunma, Japan</li>
-          <li>Museum of Tokyo University of the Arts, Tokyo, Japan</li>
-          <li>IMOGA Graphic Arts Museum, Istanbul, Turkey</li>
-        </ul>
-        <h4>Publication</h4>
-        <ul class="no-bulletpoint">
-          <li>Resilient designers, Hexagon UX [<a href="https://drive.google.com/file/d/1F_DyLvQHpT1WkbEx7HUlSeaWE5EPz1_o/view">English</a>, <a href="https://drive.google.com/file/d/1Nsp2wWBK9YzAGwS3LJoaxbgLaiecwjo3/view">Japanese</a>]<li>
-        </ul>
-        <h4>Awards</h4>
-        <ul class="no-bulletpoint">
-          <li>Shortlisted, Istanbul Print biennial, Turkey</li>
-          <li>Shortlisted, Yamamoto kanae print grand prix competition, Japan</li>
-          <li>Taito award, Tokyo University of the Arts, Japan</li>
-        </ul>
-        <h4>Education</h4>
-        <ul class="no-bulletpoint">
-          <li>MFA Fine Art, Goldsmiths, University of London</li>
-          <li>MFA Printing, Tokyo University of the Arts</li>
-          <li>BA Painting, Tokyo University of the Arts</li>
-        </ul>
-      </div></section>
+        <div id="profile"><div w3-include-html="res/en.html"></div></div>
+        
+      </div>
+    </section>
 
     <footer>
       <div class="s-container l-container">
+        <h4><button class="button-language" onclick="switchEN()">English</button> | <button class="button-language" onclick="switchJP()">日本語</button></h4>
       <div w3-include-html="res/footer.html"></div> 
       </div>
     </footer>
