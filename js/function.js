@@ -65,7 +65,7 @@ function placeImage(){
       for (var i = loadStart; i <= loadEnd; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
-          image.classList.remove('no-display');
+          // image.classList.remove('no-display');
           image.style.position='relative';
           image.style.float='left';
           image.style.left='';
@@ -78,7 +78,7 @@ function placeImage(){
       for (var i = loadStart; i <= loadEnd; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
-          image.classList.remove('no-display');
+          // image.classList.remove('no-display');
           image.style.position='absolute';
           if (i%2 == 1){
               image.style.left=postionX;
@@ -95,7 +95,7 @@ function placeImage(){
       for (var i = loadStart; i <= loadEnd; i++){
           var target = 'img'+i.toString();
           var image = document.getElementById(target);
-          image.classList.remove('no-display');
+          // image.classList.remove('no-display');
           image.style.position='absolute';
           if (i%3 == 1){
               image.style.left=postionX;
