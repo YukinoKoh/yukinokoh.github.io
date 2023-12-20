@@ -4,7 +4,7 @@ var positionY = 60;
 var margin =20;
 var colNum;
 var loadStart = 1
-var loadEnd = 19;
+var loadEnd = 10;
 var loadDone = false;
 var language = 'EN';
 
@@ -152,13 +152,13 @@ function openmenu(){
   if(icon.hasAttribute("menu")== true){
     // to close the menu
     icon.removeAttribute("menu", "class");
-    icon.setAttribute("class", "rotate-menu-to-close");
+    icon.setAttribute("class", "rotate-menu-to-close menu-style");
     menu.removeAttribute("class");
     menu.setAttribute("class","hidden");
   }else{
     // to open the menu
     icon.setAttribute("menu","on")
-    icon.setAttribute("class", "rotate-menu-to-open");
+    icon.setAttribute("class", "rotate-menu-to-open menu-style");
     menu.removeAttribute("class");
     menu.setAttribute("class","show fill s-menu l-title");
   }
