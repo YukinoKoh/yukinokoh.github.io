@@ -2,12 +2,21 @@
 /* menu */
 .header-burger{
   width: 50px;
-  float: right;
+  float: left;
   color: var(--sub);
   cursor: pointer;
 }
-.menu-icon{
-  width: 18px;
+
+.menu-style{
+  float:left;
+  margin: 20px 20px 0 0;
+  width: 32px;
+}
+.hidden{
+  display:none;
+}
+.on{
+  display:block;
 }
 /* Small devices (phones, 776px and down) */
 @media only screen and (max-width: 776px) {
@@ -17,6 +26,6 @@
 /* full (portrait tablets and large phones, 776px and up) */
 @media only screen and (min-width: 776px) {
   .l-title {
-    margin: 150px;
+    margin: 60px;
     display: inline-block; }
 }

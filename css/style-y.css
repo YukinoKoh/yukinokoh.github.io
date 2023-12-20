@@ -31,17 +31,23 @@ body {
   font-weight: 300;
   font-size: 13px;
   color: var(--basecolor) }
-/* a, a:visited, a:active {
+a, a:visited, a:active {
   color:  var(--basecolor);
   text-decoration: none;
   border-bottom: 1px solid var(--basecolor)}
 a:hover {
   color: var(--themecolor);
-  border-bottom:1px sold var(--themecolor)} */
+  border-bottom:1px sold var(--themecolor)} 
 
 h1 {font-family: var(--serif);}
-h2 {font-family: var(--serif);}
-/* yukino kohmoto */ 
+/* menu */
+h2 {
+  font-family: var(--serif);
+  font-weight: 300;}
+h2 a, h2 a:visited,h2 a:active {
+  text-decoration: none;
+  border-bottom: none;}  
+
 h3 {
   font-family: var(--sansserif);
   font-size: 32px;
@@ -59,7 +65,8 @@ h4 {
   margin: 42px 0 6px 0;}
 h4 a, h4 a:visited,h4 a:active {
   text-decoration: none;
-  border-bottom: none}  
+  border-bottom: none;
+  color:  var(--basecolor);}  
 /* insta */  
 h5 {
   font-family: var(--serif);
@@ -148,7 +155,11 @@ section{
 }
 .mt-2 {
   margin-top: 16px; }
-
+.img-title{
+  width:300px;
+  float:left;
+  margin: 0 0 40px 0;
+}
 
 /* Small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
@@ -183,7 +194,13 @@ section{
     margin: 0 auto;
     display: block;
     position: relative;
-    float:none
+   
+  }
+  .m-col12-left{
+    width: 620px;
+    display: block;
+    position: relative;
+    float:left;
   }
  }
 /* full (landscape tablets and large phones, 1024px and up) */
@@ -203,5 +220,11 @@ section{
     margin: 0 auto;
     display: block;
     position: relative; 
-    float:none}
+}
+  .l-col12-left {
+    width: 940px;
+    float: left;
+    display: block;
+    position: relative; 
+}
 }
