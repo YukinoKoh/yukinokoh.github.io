@@ -10,7 +10,7 @@
   --subhr: #eeeeff;
   --background: #fff;
   --serif: "Playfair",  serif;
-  --sansserif: "Barlow Condensed", sans-serif;
+  --sansserif: "ClarikaProGeo-Lt", sans-serif;
   --imagemargin: 16px;
 }
 /* sans-serif: , "ClarikaProGeo-Md" */
@@ -34,7 +34,8 @@ body {
 a, a:visited, a:active {
   color:  var(--basecolor);
   text-decoration: none;
-  border-bottom: 1px solid var(--basecolor)}
+  /* border-bottom: 1px solid var(--basecolor)*/
+}
 a:hover {
   color: var(--themecolor);
   border-bottom:1px sold var(--themecolor)} 
@@ -67,7 +68,6 @@ h4 a, h4 a:visited,h4 a:active {
   text-decoration: none;
   border-bottom: none;
   color:  var(--basecolor);}  
-/* insta */  
 h5 {
   font-family: var(--serif);
   font-weight: 500;
@@ -81,26 +81,17 @@ h5 a, h5 a:visited,h5 a:active {
   border-bottom: none}
 
 .sub{
-  font-family: var(--serif);
   color: var(--subcolor);
-  margin-top:8px;
-  font-size: 13px;
 }  
-.sub a, .sub a:visited, .sub a:active {
+a.sub , a.sub:visited  , a.sub:active{
   color:  var(--subcolor);
   text-decoration: none;
   border-bottom: none}
 
-.button-links,.button-links a, .button-links a:visited, .button-links a:active  {
-  background-color: var(--themecolor);
-  border: none;
-  color: #ffffff;
-  padding: 15px 32px;
-  text-align: center;
+a.sub:hover{
+  color:  var(--themecolor);
   text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  border-radius: 12px;}
+  border-bottom: none}
 
 ul.no-bulletpoint {
   list-style-type: none;
@@ -111,8 +102,18 @@ li{
   margin:8px 0;
   padding:0;}
 
+.workindex{
+  font-family: var(--serif);
+  font-size: 16px;;
+  margin: 2 16 2 0;
+}
 footer{
+  margin-top: 20px;;
   border-top: solid var(--subhr) 1px;
+}
+.footer-index{
+  font-family: var(--serif);
+  margin: 2 16 2 0;
 }
 
 /*
@@ -124,6 +125,7 @@ footer{
 .no-display{
   display:none;
 }
+
 .button-language{
   font-family: var(--serif);
   background-color: var(--background) ;
