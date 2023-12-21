@@ -4,9 +4,10 @@ var positionY = 60;
 var margin =20;
 var colNum;
 var loadStart = 1
-var loadEnd = 10;
+var loadEnd = 3;
 var loadDone = false;
 var language = 'EN';
+var dirURL;
 
 document.addEventListener('DOMContentLoaded', function() {
   includeHTML(),
@@ -116,12 +117,29 @@ function placeImage(){
   imageContainer.style.height=containerHeight;
 }
 
+function recalc(){
+  var element = document.getElementById("content");
+  var containerHeight = element.offsetHeight;
+  console.log(containerHeight);
+  imageContainer.style.height=containerHeight;
+}
+
 function switchJP(){
     document.getElementById('profile').innerHTML = '<div w3-include-html="res/jp.html"></div>';
     includeHTML();
 }
 function switchEN(){
   document.getElementById('profile').innerHTML = '<div w3-include-html="res/en.html"></div>';
+  includeHTML();
+}
+function showDetail(workID){
+  dirURL = '<div w3-include-html="drawing/' + workID + '.html"></div>'
+  document.getElementById('drawing').innerHTML = dirURL;
+  includeHTML();
+  window.setTimeout( recalc, 100 );
+}
+function back(){
+  document.getElementById('drawing').innerHTML = '<div w3-include-html="res/image.html"></div>';
   includeHTML();
 }
 
